@@ -22,7 +22,7 @@ I am now a third-year Computer Science undergraduate student at CityU HK.
 My research interest includes Machine Learning, Recommender System, Information Retrieval and Large Language Models. 
 
 # 🔥 News
-- *2023.09*: &nbsp;🎉🎉 Start a research placement supervised by prof. Antoni B. Chan. 
+- *2023.09*: &nbsp;🎉🎉 Start a research placement supervised by Prof. Antoni B. Chan. 
 - *2021.09*: &nbsp;🎉🎉 Graduate from the middle school attached to NWPU. Join City HK as a CS undergraduate. 
 
 # 📝 Publications 
@@ -52,4 +52,4 @@ My research interest includes Machine Learning, Recommender System, Information 
 
 
 # 💻 Internships
-- *2023.05 - 2020.02*, Research Assistant, VISAL Lab, Department of Computer Science, CityU, Hong Kong.
+- *2023.09 - 2024.05*, Research Assistant, VISAL Lab, Department of Computer Science, CityU, Hong Kong.
