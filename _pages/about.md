@@ -45,8 +45,10 @@ My research interest includes Machine Learning, Recommender System, Information 
 - *2021.09 - 2024.05* Dean’s List in College of Engineering * 4 
 - *2021.09* CityU Full Tuition Scholarship (Top 1% of National Higher Education Entrance Examination, Shannxi 2021, 560k HKD). 
 
+---
 # 📖 Educations
 - *2021.09 - 2025.05*, BSc in Computer Science, City University of Hong Kong
+---
 
 # 💬 Invited Talks
 
