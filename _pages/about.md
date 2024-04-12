@@ -21,7 +21,7 @@ I am now a third-year Computer Science undergraduate student at CityU HK.
 
 My research interest includes Machine Learning, Recommender System, Information Retrieval and Large Language Models. 
 
-I use blogs to record my learning: https://www.zhihu.com/column/c_1756621321792831489
+I use blogs to record my learning: [Eden's machine learning notebooks](https://www.zhihu.com/column/c_1756621321792831489)
 
 # 🔥 News
 - *2023.09*: &nbsp;🎉🎉 Start a research placement supervised by Prof. Antoni B. Chan. 
