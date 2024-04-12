@@ -21,6 +21,8 @@ I am now a third-year Computer Science undergraduate student at CityU HK.
 
 My research interest includes Machine Learning, Recommender System, Information Retrieval and Large Language Models. 
 
+I use blogs to record my learning: https://www.zhihu.com/column/c_1756621321792831489
+
 # 🔥 News
 - *2023.09*: &nbsp;🎉🎉 Start a research placement supervised by Prof. Antoni B. Chan. 
 - *2021.09*: &nbsp;🎉🎉 Graduate from the middle school attached to NWPU. Join City HK as a CS undergraduate. 
