@@ -36,6 +36,7 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 [Do large language models resolve semantic ambiguities in the same way as humans? The case of word segmentation in Chinese sentence reading]()
 
 Weiyan Liao, **Zixuan Wang**, Kathy Shum, Antoni B. Chan, Janet H. Hsiao
+&emsp;
 Proceedings of the 46th Annual Conference of the Cognitive Science Society (Accepted)
 - The reliability of LLM
 - LLM hallucinations in Chinese word segmentation ambiguities
