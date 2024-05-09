@@ -34,7 +34,7 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 <div class='paper-box-text' markdown="1">
 
 [Do large language models resolve semantic ambiguities in the same way as humans? The case of word segmentation in Chinese sentence reading]()
-<br/>
+
 Weiyan Liao, **Zixuan Wang**, Kathy Shum, Antoni B. Chan, Janet H. Hsiao
 <br/>
 Proceedings of the 46th Annual Conference of the Cognitive Science Society (Accepted)
