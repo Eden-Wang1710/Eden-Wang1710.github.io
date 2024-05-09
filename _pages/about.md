@@ -17,15 +17,16 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am now a third-year Computer Science undergraduate student at CityU HK.
+I am now a third-year Computer Science undergraduate at City University of Hong Kong.
 
-My research interest includes Machine Learning, Recommender System, Information Retrieval and Large Language Models. 
+My research interests include machine learning, recommendation systems, information retrieval, and large language models. 
 
 I use blogs to record my learning: [Eden's machine learning notebooks](https://www.zhihu.com/column/c_1756621321792831489)
 
 # 🔥 News
+- *2024.05*: &nbsp;🎉🎉 Will start a machine learning engineer internship in Trip.com Group Limited（携程集团）.
 - *2023.09*: &nbsp;🎉🎉 Start a research placement supervised by Prof. Antoni B. Chan. 
-- *2021.09*: &nbsp;🎉🎉 Graduate from the middle school attached to NWPU. Join City HK as a CS undergraduate. 
+- *2021.09*: &nbsp;🎉🎉 Join CityU as a CS undergraduate with a Full Tuition Scholarship. 
 
 # 📝 Publications 
 
@@ -53,4 +54,5 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 
 # 💻 Internships
+- *2024.05 - 2024.09*, Machine Learning Engineer, Trip.com Group Limited, Shanghai.
 - *2023.09 - 2024.05*, Research Assistant, VISAL Lab, Department of Computer Science, CityU, Hong Kong.
