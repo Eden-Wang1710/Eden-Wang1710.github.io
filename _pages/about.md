@@ -33,16 +33,15 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CogSci 2024</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Do large language models resolve semantic ambiguities in the same way as humans? The case of word segmentation in Chinese sentence reading](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[Do large language models resolve semantic ambiguities in the same way as humans? The case of word segmentation in Chinese sentence reading]()
 
 Weiyan Liao, **Zixuan Wang**, Kathy Shum, Antoni B. Chan, Janet H. Hsiao
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+Proceedings of the 46th Annual Conference of the Cognitive Science Society (Accepted)
+- The reliability of LLM
+- Hidden Markov Model for eyeball movement analysis
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🎖 Honors and Awards
 - *2021.09 - 2024.05* Dean’s List in College of Engineering * 4 
