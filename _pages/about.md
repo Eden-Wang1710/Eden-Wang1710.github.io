@@ -54,5 +54,5 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 
 # 💻 Internships
-- *2024.05 - 2024.09*, Machine Learning Engineer, Trip.com Group Limited, Shanghai.
+- *2024.05 - 2024.09*, Machine Learning Engineer, Trip.com Group Limited（携程集团）, Shanghai.
 - *2023.09 - 2024.05*, Research Assistant, VISAL Lab, Department of Computer Science, CityU, Hong Kong.
