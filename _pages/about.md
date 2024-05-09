@@ -29,7 +29,7 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 - *2021.09*: &nbsp;🎉🎉 Join CityU as a CS undergraduate with a Full Tuition Scholarship. 
 
 # 📝 Publications 
-
+## Conference
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CogSci 2024</div><img src='images/cogsci24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
