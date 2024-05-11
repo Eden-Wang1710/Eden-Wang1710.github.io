@@ -17,14 +17,14 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I'm Wang Zixuan(王子瑄). I'm now a third-year Computer Science undergraduate at City University of Hong Kong.
+Hi, I'm Wang Zixuan (王子瑄). I'm now a third-year Computer Science undergraduate at City University of Hong Kong.
 
 My research interests include Machine Learning, especially in Recommendation Systems and Large Language Models. 
 
 I use blogs to record my learning: [Eden's machine learning notebooks](https://www.zhihu.com/column/c_1756621321792831489)
 
 # 🔥 News
-- *2024.05*: &nbsp;🎉🎉 Will start a machine learning engineer internship in Trip.com Group Limited（携程集团）.
+- *2024.05*: &nbsp;🎉🎉 Will start a machine learning engineer internship in Trip.com Group Limited (携程集团).
 - *2023.09*: &nbsp;🎉🎉 Start a research placement supervised by Prof. Antoni B. Chan. 
 - *2021.09*: &nbsp;🎉🎉 Join CityU as a CS undergraduate with a Full Tuition Scholarship. 
 
@@ -55,5 +55,5 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society (Acce
 
 
 # 💻 Internships
-- *2024.05 - 2024.09*, Machine Learning Engineer, Trip.com Group Limited（携程集团）, Shanghai.
+- *2024.05 - 2024.09*, Machine Learning Engineer, Trip.com Group Limited (携程集团), Shanghai.
 - *2023.09 - 2024.05*, Research Assistant, VISAL Lab, Department of Computer Science, CityU, Hong Kong.
