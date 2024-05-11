@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am now a third-year Computer Science undergraduate at City University of Hong Kong.
+Hi, I'm Wang Zixuan(王子瑄). I'm now a third-year Computer Science undergraduate at City University of Hong Kong.
 
-My research interests include machine learning, recommendation systems, information retrieval, and large language models. 
+My research interests include Machine Learning, especially in Recommendation Systems and Large Language Models. 
 
 I use blogs to record my learning: [Eden's machine learning notebooks](https://www.zhihu.com/column/c_1756621321792831489)
 
@@ -37,7 +37,7 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 Weiyan Liao, **Zixuan Wang**, Kathy Shum, Antoni B. Chan, Janet H. Hsiao
 <br/><br/>
-Proceedings of the 46th Annual Conference of the Cognitive Science Society (Accepted)（CCF-B, Core-B, EI indexed）
+Proceedings of the 46th Annual Conference of the Cognitive Science Society (Accepted) (CCF-B, Core-B, EI indexed)
 - The reliability of LLM
 - LLM hallucinations in Chinese word segmentation ambiguities
 - Hidden Markov Model for eyeball movement analysis
