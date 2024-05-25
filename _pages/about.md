@@ -24,7 +24,7 @@ My research interests include Machine Learning, especially in Large Language Mod
 I use blogs to record my learning: [Eden's machine learning notebooks](https://www.zhihu.com/column/c_1756621321792831489)
 
 # 🔥 News
-- *2024.05*: &nbsp;🎉🎉 Will start a Machine Learning Engineer internship in Alibaba Group - Alibaba Holding (阿里巴巴控股集团).
+- *2024.05*: &nbsp;🎉🎉 Will start a Large Language Model Engineer internship in Alibaba Group - Alibaba Holding (阿里巴巴控股集团).
 - *2023.09*: &nbsp;🎉🎉 Start a research placement supervised by Prof. Antoni B. Chan. 
 - *2021.09*: &nbsp;🎉🎉 Join CityU as a CS undergraduate with a Full Tuition Scholarship. 
 
@@ -55,5 +55,5 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society (Acce
 
 
 # 💻 Internships
-- *2024.05 - 2024.09*, Machine Learning Engineer, Alibaba Group - Alibaba Holding (阿里巴巴控股集团), Hangzhou.
+- *2024.05 - 2024.09*, Machine Learning Engineer (LLM), Alibaba Group - Alibaba Holding - Risk & Security Dept (阿里巴巴控股集团), Hangzhou.
 - *2023.09 - 2024.05*, Research Assistant, VISAL Lab, Department of Computer Science, CityU, Hong Kong.
