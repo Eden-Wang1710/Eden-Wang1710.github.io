@@ -55,5 +55,5 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society (Acce
 
 
 # 💻 Internships
-- *2024.05 - 2024.09*, Machine Learning Engineer (LLM), Alibaba Group - Alibaba Holding - Risk & Security Dept (阿里巴巴控股集团), Hangzhou.
+- *2024.05 - 2024.09*, Machine Learning Engineer (LLM), Alibaba Group - Alibaba Holding - Risk and Security Dept (阿里巴巴控股集团), Hangzhou.
 - *2023.09 - 2024.05*, Research Assistant, VISAL Lab, Department of Computer Science, CityU, Hong Kong.
