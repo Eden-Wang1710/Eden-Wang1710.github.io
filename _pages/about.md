@@ -19,7 +19,7 @@ redirect_from:
 
 Hi, I'm Wang Zixuan (王子瑄). I'm now a third-year Computer Science undergraduate at City University of Hong Kong.
 
-My research interests include Machine Learning, especially in Large Language Models and Recommendation Systems. 
+My research interest is in Large Language Models, especially the interpretability, safety, reliability and domain-specific application. 
 
 I use blogs to record my learning: [Eden's machine learning notebooks](https://www.zhihu.com/column/c_1756621321792831489)
 
@@ -46,8 +46,8 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society (Acce
 
 
 # 🎖 Honors and Awards
-- *2021.09 - 2024.05* Dean’s List in College of Engineering * 4 
-- *2021.09* CityU Full Tuition Scholarship (Top 1% of National Higher Education Entrance Examination, Shannxi 2021, 560k HKD). 
+- *2021.09 - 2024.06* Dean’s List in College of Engineering * 5 
+- *2021.09 - 2025.06* CityU Full Tuition Scholarship (Top 1% of National Higher Education Entrance Examination, Shannxi 2021, 560k HKD). 
 
 
 # 📖 Educations
