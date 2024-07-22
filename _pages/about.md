@@ -24,7 +24,7 @@ My research interest is in Large Language Models, especially the interpretabilit
 I use blogs to record my learning: [Eden's machine learning notebooks](https://www.zhihu.com/column/c_1756621321792831489)
 
 # 🔥 News
-- *2024.05*: &nbsp;🎉🎉 Our team AML_Lab@CityU got second place🥈 in 2 tracks and third place 🥉 in 3 tracks, Overall 2/508 in Amazon KDD CUP 2024!
+- *2024.07*: &nbsp;🎉🎉 Our team AML_Lab@CityU got second place🥈 in 2 tracks and third place 🥉 in 3 tracks, Overall 2/508 in Amazon KDD CUP 2024!
 - *2024.05*: &nbsp;🎉🎉 Will start a Large Language Model Engineer internship in Alibaba Group - Alibaba Holding (阿里巴巴控股集团).
 - *2023.09*: &nbsp;🎉🎉 First paper accepted by CogSci 2024.  
 
@@ -46,7 +46,7 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society (Acce
 
 
 # 🎖 Honors and Awards
-- *2024.07* Second place🥈 in 2 tracks, third place🥉 in 3 tracks in Amazon KDD CUP 2024, Overall 2/508 teams, Granted by Amazon [Leaderboard](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards)
+- *2024.07* Second place🥈 in 2 tracks, third place🥉 in 3 tracks in Amazon KDD CUP 2024, Overall 2/508 teams, Granted by Amazon. [Leaderboard](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards)
 - *2021.09 - 2024.06* Dean’s List in College of Engineering * 5 
 - *2021.09 - 2025.06* CityU Full Tuition Scholarship (Top 1% of National Higher Education Entrance Examination, Shannxi 2021, 560k HKD). 
 
