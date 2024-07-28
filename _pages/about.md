@@ -53,15 +53,15 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society (CCF-
 Pengyue Jia, Jingtong Gao, Xiaopeng Li, **Zixuan Wang**, Yiyao Jin, Xiangyu Zhao
 <br/><br/>
 Amazon KDD Cup 2024 Workshop: A Multi-task Online Shopping Challenge for Large Language Models
-- The reliability of LLM
-- LLM hallucinations in Chinese word segmentation ambiguities
-- Hidden Markov Model for eyeball movement analysis
+- LLM for multi-task online shopping
+- LLM quantization
+- LLM inference acceleration and prompt design
 </div>
 </div>
 
 
 # 🎖 Honors and Awards
-- *2024.07* Second place🥈 in 2 tracks, third place🥉 in 3 tracks and best students awards in 2 tracks in **Amazon KDD CUP 2024**, overall ranking 2/508 teams, Awarded 8750 USD, Granted by Amazon. [Leaderboard](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards)
+- *2024.07* Second place🥈 in 2 tracks, third place🥉 in 3 tracks and best students awards in 2 tracks in **Amazon KDD CUP 2024**, overall ranking 2/508 teams, Awarded 8750 USD, Granted by Amazon. [[Leaderboard]](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards)
 - *2021.09 - 2024.06* Dean’s List in College of Engineering * 5 
 - *2021.09 - 2025.06* CityU Full Tuition Scholarship (Top 1% of National Higher Education Entrance Examination, Shannxi 2021, **560000 HKD**). 
 
