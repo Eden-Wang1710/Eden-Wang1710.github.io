@@ -50,12 +50,13 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society (CCF-
 
 [2nd Place Solution in Overall for Amazon KDD Cup 2024]()
 
-Pengyue Jia*, Jingtong Gao*, Xiaopeng Li*, **Zixuan Wang***, Yiyao Jin*, Xiangyu Zhao (* Equal Contribution)
+Pengyue Jia\*, Jingtong Gao\*, Xiaopeng Li\*, **Zixuan Wang**\*, Yiyao Jin\*, Xiangyu Zhao (\*: Equal Contribution)
 <br/><br/>
 Amazon KDD Cup 2024 Workshop: A Multi-task Online Shopping Challenge for Large Language Models
 - LLM for multi-task online shopping
 - LLM quantization
 - LLM inference acceleration and prompt design
+- [**Competition**]([https://applied-machine-learning-lab.github.io/ERASE/](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms)) \| [**Leaderboard**](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards) \|  [**Paper**]() \| [**Code**](https://gitlab.aicrowd.com/gaojingtong/amazon-kdd-cup-2024-starter-kit)
 </div>
 </div>
 
