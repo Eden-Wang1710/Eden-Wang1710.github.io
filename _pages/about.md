@@ -38,7 +38,6 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 Weiyan Liao, **Zixuan Wang**, Kathy Shum, Antoni B. Chan, Janet H. Hsiao
 <br/><br/>
 Proceedings of the 46th Annual Conference of the Cognitive Science Society 2024 (CCF-B, Core-B, EI indexed)
-- The reliability of LLM
 - LLM hallucinations in Chinese word segmentation ambiguities
 - Hidden Markov Model for eyeball movement analysis
 </div>
@@ -54,8 +53,7 @@ Pengyue Jia\*, Jingtong Gao\*, Xiaopeng Li\*, **Zixuan Wang**\*, Yiyao Jin\*, Xi
 <br/><br/>
 Amazon KDD Cup 2024 Workshop: A Multi-task Online Shopping Challenge for Large Language Models
 - LLM for multi-task online shopping
-- LLM quantization
-- LLM inference acceleration and prompt design
+- LLM quantization, inference acceleration and prompt design
 
 [**Competition**](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms) \| [**Leaderboard**](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards) \|  [**Paper**]() \| [**Code**](https://gitlab.aicrowd.com/gaojingtong/amazon-kdd-cup-2024-starter-kit)
 </div>
