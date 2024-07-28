@@ -45,12 +45,12 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society (CCF-
 </div>
 
 ## Workshop
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD Workshop 2024</div><img src='images/cogsci24.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD Workshop 2024</div><img src='images/kdd_cup.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [2nd Place Solution in Overall for Amazon KDD Cup 2024]()
 
-Pengyue Jia, Jingtong Gao, Xiaopeng Li, **Zixuan Wang**, Yiyao Jin, Xiangyu Zhao
+Pengyue Jia*, Jingtong Gao*, Xiaopeng Li*, **Zixuan Wang***, Yiyao Jin*, Xiangyu Zhao (* Equal Contribution)
 <br/><br/>
 Amazon KDD Cup 2024 Workshop: A Multi-task Online Shopping Challenge for Large Language Models
 - LLM for multi-task online shopping
