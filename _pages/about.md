@@ -19,13 +19,13 @@ redirect_from:
 
 Hi, I'm Wang Zixuan (王子瑄). I'm now a third-year Computer Science undergraduate at City University of Hong Kong.
 
-My research interest is in Large Language Models, especially the interpretability, safety, reliability and domain-specific application. 
+My research interests lie in Large Language Models, especially the interpretability, safety, reliability and domain-specific application. 
 
 I use blogs to record my learning: [Eden's machine learning notebooks](https://www.zhihu.com/column/c_1756621321792831489)
 
 # 🔥 News
-- *2024.07*: &nbsp;🎉🎉 Our team AML_Lab@CityU got second place🥈 in 2 tracks and third place 🥉 in 3 tracks, Overall 2/508 in Amazon KDD CUP 2024!
-- *2024.05*: &nbsp;🎉🎉 Will start a Large Language Model Engineer internship in Alibaba Group - Alibaba Holding (阿里巴巴控股集团).
+- *2024.07*: &nbsp;🎉🎉 Our team AML_Lab@CityU got second place🥈 in 2 tracks, third place 🥉 in 3 tracks, best students awards in 2 tracks and overall ranking 2/508 in **Amazon KDD CUP 2024**! A big shoutout to the awesome teamwork with my teammates Pengyue, Jingtong, Xiaopeng and Yiyao!
+- *2024.05*: &nbsp;🎉🎉 Will start a Large Language Model Engineer internship in **Alibaba Group** - Alibaba Holding (阿里巴巴控股集团).
 - *2023.09*: &nbsp;🎉🎉 First paper accepted by CogSci 2024.  
 
 # 📝 Publications 
@@ -44,11 +44,26 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society (Acce
 </div>
 </div>
 
+## Workshop
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD Workshop 2024</div><img src='images/cogsci24.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[2nd Place Solution in Overall for Amazon KDD Cup 2024]()
+
+Pengyue Jia, Jingtong Gao, Xiaopeng Li, **Zixuan Wang**, Yiyao Jin, Xiangyu Zhao
+<br/><br/>
+Amazon KDD Cup 2024 Workshop
+- The reliability of LLM
+- LLM hallucinations in Chinese word segmentation ambiguities
+- Hidden Markov Model for eyeball movement analysis
+</div>
+</div>
+
 
 # 🎖 Honors and Awards
-- *2024.07* Second place🥈 in 2 tracks, third place🥉 in 3 tracks in Amazon KDD CUP 2024, Overall 2/508 teams, Granted by Amazon. [Leaderboard](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards)
+- *2024.07* Second place🥈 in 2 tracks, third place🥉 in 3 tracks and best students awards in 2 tracks in **Amazon KDD CUP 2024**, overall ranking 2/508 teams, Awarded 8750 USD, Granted by Amazon. [Leaderboard](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards)
 - *2021.09 - 2024.06* Dean’s List in College of Engineering * 5 
-- *2021.09 - 2025.06* CityU Full Tuition Scholarship (Top 1% of National Higher Education Entrance Examination, Shannxi 2021, 560k HKD). 
+- *2021.09 - 2025.06* CityU Full Tuition Scholarship (Top 1% of National Higher Education Entrance Examination, Shannxi 2021, **560000 HKD**). 
 
 
 # 📖 Educations
