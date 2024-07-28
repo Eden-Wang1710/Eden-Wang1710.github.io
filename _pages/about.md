@@ -37,7 +37,7 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 Weiyan Liao, **Zixuan Wang**, Kathy Shum, Antoni B. Chan, Janet H. Hsiao
 <br/><br/>
-Proceedings of the 46th Annual Conference of the Cognitive Science Society (CCF-B, Core-B, EI indexed)
+Proceedings of the 46th Annual Conference of the Cognitive Science Society 2024 (CCF-B, Core-B, EI indexed)
 - The reliability of LLM
 - LLM hallucinations in Chinese word segmentation ambiguities
 - Hidden Markov Model for eyeball movement analysis
