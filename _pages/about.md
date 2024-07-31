@@ -61,7 +61,7 @@ Amazon KDD Cup 2024 Workshop: A Multi-task Online Shopping Challenge for Large L
 
 
 # 🎖 Honors and Awards
-- *2024.07* Second place🥈 in 2 tracks, third place🥉 in 3 tracks and best students awards in 2 tracks in **Amazon KDD CUP 2024**, overall ranking 2/508 teams, Awarded 8750 USD, Granted by Amazon. [[Leaderboard]](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards)
+- *2024.07* Second place🥈 in 2 tracks, third place🥉 in 3 tracks and best students awards in 2 tracks in **Amazon KDD CUP 2024**, overall ranking 2/508 teams, Awarded 8750 USD, Granted by Amazon. [[announcement]](https://discourse.aicrowd.com/t/announcing-the-winners-of-amazon-kdd-cup-2024/10758)  [[Leaderboard]](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards) 
 - *2021.09 - 2024.06* Dean’s List in College of Engineering * 5 
 - *2021.09 - 2025.06* CityU Full Tuition Scholarship (Top 1% of National Higher Education Entrance Examination, Shannxi 2021, **560000 HKD**). 
 
