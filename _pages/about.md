@@ -44,7 +44,7 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society 2024 
 </div>
 
 ## Workshop
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD Workshop 2024</div><img src='images/kdd_cup.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD Workshop 2024</div><img src='images/kdd_cup1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [2nd Place Solution in Overall for Amazon KDD Cup 2024](https://openreview.net/forum?id=OEjXPwR7aE#discussion)
@@ -72,4 +72,4 @@ Amazon KDD Cup 2024 Workshop: A Multi-task Online Shopping Challenge for Large L
 
 # 💻 Internships
 - *2024.05 - 2024.09*, Machine Learning Engineer (LLM), Alibaba Group - Alibaba Holding - Risk and Security Dept (阿里巴巴控股集团), Hangzhou.
-- *2023.09 - 2024.05*, Research Assistant, VISAL Lab, Department of Computer Science, CityU, Hong Kong.
+- *2023.09 - 2024.05*, Research Assistant, [VISAL Lab](http://visal.cs.cityu.edu.hk/), Department of Computer Science, CityU, Hong Kong.
