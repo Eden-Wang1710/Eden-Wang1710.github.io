@@ -47,7 +47,7 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society 2024 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD Workshop 2024</div><img src='images/kdd_cup.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[2nd Place Solution in Overall for Amazon KDD Cup 2024]()
+[2nd Place Solution in Overall for Amazon KDD Cup 2024](https://openreview.net/forum?id=OEjXPwR7aE#discussion)
 
 Pengyue Jia\*, Jingtong Gao\*, Xiaopeng Li\*, **Zixuan Wang**\*, Yiyao Jin\*, Xiangyu Zhao (\*: Equal Contribution)
 <br/><br/>
@@ -55,7 +55,7 @@ Amazon KDD Cup 2024 Workshop: A Multi-task Online Shopping Challenge for Large L
 - LLM for multi-task online shopping
 - LLM quantization, inference acceleration and prompt design
 
-[**Competition**](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms) \| [**Leaderboard**](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards) \|  [**Paper**]() \| [**Code**](https://gitlab.aicrowd.com/gaojingtong/amazon-kdd-cup-2024-starter-kit)
+[**Competition**](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms) \| [**Leaderboard**](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards) \|  [**Paper**](https://openreview.net/pdf?id=OEjXPwR7aE) \| [**Code**](https://gitlab.aicrowd.com/gaojingtong/amazon-kdd-cup-2024-starter-kit)
 </div>
 </div>
 
