@@ -51,7 +51,7 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society 2024 
 
 Pengyue Jia\*, Jingtong Gao\*, Xiaopeng Li\*, **Zixuan Wang**\*, Yiyao Jin\*, Xiangyu Zhao (\*: Equal Contribution)
 <br/><br/>
-Amazon KDD Cup 2024 Workshop: A Multi-task Online Shopping Challenge for Large Language Models
+Amazon KDD Cup 2024 Workshop: A Multi-task Online Shopping Challenge for Large Language Models (Oral)
 - LLM for multi-task online shopping
 - LLM quantization, inference acceleration and prompt design
 
