@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I'm Wang Zixuan (王子瑄). I'm now a third-year Computer Science undergraduate at City University of Hong Kong.
+Hi, I'm Wang Zixuan (王子瑄). I'm now a final-year Computer Science undergraduate at City University of Hong Kong.
 
 My research interests lie in Large Language Models, especially the interpretability, safety, reliability and domain-specific application. 
 
@@ -26,7 +26,7 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 # 🔥 News
 - *2024.07*: &nbsp;🎉🎉 Our team AML_Lab@CityU got second place🥈 in 2 tracks, third place 🥉 in 3 tracks, best students awards in 2 tracks and overall ranking 2/508 in **Amazon KDD CUP 2024**! A big shoutout to the awesome teamwork with my teammates Pengyue, Jingtong, Xiaopeng and Yiyao!
 - *2024.05*: &nbsp;🎉🎉 Will start a Large Language Model Engineer internship in **Alibaba Group** - Alibaba Holding (阿里巴巴控股集团).
-- *2023.09*: &nbsp;🎉🎉 First paper accepted by CogSci 2024.  
+- *2024.04*: &nbsp;🎉🎉 First paper accepted by CogSci 2024.  
 
 # 📝 Publications 
 ## Conference
