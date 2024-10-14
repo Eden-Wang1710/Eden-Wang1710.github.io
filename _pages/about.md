@@ -19,7 +19,7 @@ redirect_from:
 
 Hi, I'm Wang Zixuan (王子瑄). I'm now a final-year Computer Science undergraduate at City University of Hong Kong.
 
-My research interests lie in Large Language Models, especially the interpretability, safety, reliability and domain-specific application. 
+My research interests lie in Large Language Models, especially the interpretability, safety, and multimodal application. 
 
 I use blogs to record my learning: [Eden's machine learning notebooks](https://www.zhihu.com/column/c_1756621321792831489)
 
