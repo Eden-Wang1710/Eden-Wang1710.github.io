@@ -30,6 +30,21 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 # 📝 Publications 
 ## Conference
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD Workshop 2024 Oral</div><img src='images/kdd_cup1.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[2nd Place Solution in Overall for Amazon KDD Cup 2024](https://openreview.net/forum?id=OEjXPwR7aE#discussion)
+
+Pengyue Jia\*, Jingtong Gao\*, Xiaopeng Li\*, **Zixuan Wang**\*, Yiyao Jin\*, Xiangyu Zhao (\*: Equal Contribution)
+<br/><br/>
+KDD Cup 2024 Workshop: A Multi-task Online Shopping Challenge for Large Language Models (Oral)
+- LLM for multi-task online shopping
+- LLM quantization, inference acceleration and prompt design
+
+[**Competition**](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms) \| [**Leaderboard**](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards) \|  [**Paper**](https://openreview.net/pdf?id=OEjXPwR7aE) \| [**Code**](https://gitlab.aicrowd.com/gaojingtong/amazon-kdd-cup-2024-starter-kit) \| [**Certification**](https://github.com/Eden-Wang1710/Eden-Wang1710.github.io/blob/main/docs/KDD_Cup_Certificate.pdf)
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CogSci 2024</div><img src='images/cogsci24.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
@@ -40,22 +55,6 @@ Weiyan Liao, **Zixuan Wang**, Kathy Shum, Antoni B. Chan, Janet H. Hsiao
 Proceedings of the 46th Annual Conference of the Cognitive Science Society 2024 (CCF-B, Core-B, EI indexed)
 - LLM hallucinations in Chinese word segmentation ambiguities
 - Hidden Markov Model for eyeball movement analysis
-</div>
-</div>
-
-## Workshop
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD Workshop 2024</div><img src='images/kdd_cup1.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-
-[2nd Place Solution in Overall for Amazon KDD Cup 2024](https://openreview.net/forum?id=OEjXPwR7aE#discussion)
-
-Pengyue Jia\*, Jingtong Gao\*, Xiaopeng Li\*, **Zixuan Wang**\*, Yiyao Jin\*, Xiangyu Zhao (\*: Equal Contribution)
-<br/><br/>
-Amazon KDD Cup 2024 Workshop: A Multi-task Online Shopping Challenge for Large Language Models (Oral)
-- LLM for multi-task online shopping
-- LLM quantization, inference acceleration and prompt design
-
-[**Competition**](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms) \| [**Leaderboard**](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards) \|  [**Paper**](https://openreview.net/pdf?id=OEjXPwR7aE) \| [**Code**](https://gitlab.aicrowd.com/gaojingtong/amazon-kdd-cup-2024-starter-kit) \| [**Certification**](https://github.com/Eden-Wang1710/Eden-Wang1710.github.io/blob/main/docs/KDD_Cup_Certificate.pdf)
 </div>
 </div>
 
