@@ -33,13 +33,11 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 <div class='paper-box-text' markdown="1">
 
-[Do large language models resolve semantic ambiguities in the same way as humans? The case of word segmentation in Chinese sentence reading](https://escholarship.org/uc/item/2sm8g139)
+Speaker’s Use of Mental Verbs to Convey Belief States: A Comparison between Humans and Large Language Model (LLM) 
 
-Weiyan Liao, **Zixuan Wang**, Kathy Shum, Antoni B. Chan, Janet H. Hsiao
+Ruoxi Qi, **Zixuan Wang**, Antoni B. Chan, and Janet H. Hsiao
 <br/><br/>
-Proceedings of the 46th Annual Conference of the Cognitive Science Society 2024 (CCF-B, Core-B, EI indexed)
-- LLM hallucinations in Chinese word segmentation ambiguities
-- Hidden Markov Model for eyeball movement analysis
+19th International Pragmatics Conference, Brisbane, Jun 2025
 </div>
 
 
