@@ -30,6 +30,16 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 # 📝 Publications 
 ## Conference
+<div class='paper-box-text' markdown="1">
+
+Speaker’s Use of Mental Verbs to Convey Belief States: A Comparison between Humans and Large Language Model (LLM)
+
+Ruoxi Qi, **Zixuan Wang**, Antoni B. Chan, and Janet H. Hsiao
+<br/><br/>
+19th International Pragmatics Conference, Brisbane, Jun 2025.
+
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD Workshop 2024 Oral</div><img src='images/kdd_cup1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
