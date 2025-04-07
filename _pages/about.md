@@ -30,6 +30,20 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 # 📝 Publications 
 ## Conference
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CogSci 2024</div><img src='images/cogsci24.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Do large language models resolve semantic ambiguities in the same way as humans? The case of word segmentation in Chinese sentence reading](https://escholarship.org/uc/item/2sm8g139)
+
+Weiyan Liao, **Zixuan Wang**, Kathy Shum, Antoni B. Chan, Janet H. Hsiao
+<br/><br/>
+Proceedings of the 46th Annual Conference of the Cognitive Science Society 2024 (CCF-B, Core-B, EI indexed)
+- LLM hallucinations in Chinese word segmentation ambiguities
+- Hidden Markov Model for eyeball movement analysis
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">KDD Workshop 2024 Oral</div><img src='images/kdd_cup1.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
