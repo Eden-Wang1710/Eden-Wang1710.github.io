@@ -24,15 +24,6 @@ My research interests lie in Large Language Models, especially the interpretabil
 I use blogs to record my learning: [Eden's machine learning notebooks](https://www.zhihu.com/column/c_1756621321792831489)
 
 
-# 📖 Educations
-- *2021.09 - 2025.06*, BSc in Computer Science, City University of Hong Kong
-
-
-# 💻 Internships
-- *2024.09 - 2024.12*, Machine Learning Engineer Intern (in LLM), Baidu, Inc. - TPG - NLP Group (百度自然语言处理部), Shenzhen.
-- *2024.05 - 2024.08*, Machine Learning Engineer Intern (in LLM), Alibaba Group - Alibaba Holding - Risk and Security Dept (阿里巴巴控股集团), Hangzhou.
-- *2023.09 - 2024.05*, Research Assistant, [VISAL Lab](http://visal.cs.cityu.edu.hk/), Department of Computer Science, CityU, Hong Kong.
-
 
 # 📝 Publications 
 ## Conference
@@ -76,6 +67,16 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society 2024 
 </div>
 
 
+# 📖 Educations
+- *2021.09 - 2025.06*, BSc in Computer Science, City University of Hong Kong
+
+
+# 💻 Internships
+- *2024.09 - 2024.12*, Machine Learning Engineer Intern (in LLM), Baidu, Inc. - TPG - NLP Group (百度自然语言处理部), Shenzhen.
+- *2024.05 - 2024.08*, Machine Learning Engineer Intern (in LLM), Alibaba Group - Alibaba Holding - Risk and Security Dept (阿里巴巴控股集团), Hangzhou.
+- *2023.09 - 2024.05*, Research Assistant, [VISAL Lab](http://visal.cs.cityu.edu.hk/), Department of Computer Science, CityU, Hong Kong.
+
+  
 # 🎖 Honors and Awards
 - *2024.07* Second place🥈 in 2 tracks, third place🥉 in 3 tracks and best students awards in 2 tracks in **Amazon KDD CUP 2024**, overall ranking 2/508 teams, Awarded 8750 USD, Granted by Amazon. [[Announcement]](https://discourse.aicrowd.com/t/announcing-the-winners-of-amazon-kdd-cup-2024/10758)  [[Leaderboard]](https://www.aicrowd.com/challenges/amazon-kdd-cup-2024-multi-task-online-shopping-challenge-for-llms/leaderboards) 
 - *2021.09 - 2025.06* CityU Full Tuition Scholarship (Top 1% of National Higher Education Entrance Examination, Shannxi 2021, **560000 HKD**). 
