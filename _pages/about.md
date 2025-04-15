@@ -25,7 +25,7 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 
 # 📖 Educations
-- *2021.09 - 2025.05*, BSc in Computer Science, City University of Hong Kong
+- *2021.09 - 2025.06*, BSc in Computer Science, City University of Hong Kong
 
 
 # 💻 Internships
