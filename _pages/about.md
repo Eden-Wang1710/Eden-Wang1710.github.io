@@ -24,6 +24,9 @@ My research interests lie in Large Language Models, especially the interpretabil
 I use blogs to record my learning: [Eden's machine learning notebooks](https://www.zhihu.com/column/c_1756621321792831489)
 
 
+# 📖 Educations
+- *2021.09 - 2025.06*, BSc in Computer Science, City University of Hong Kong
+
 
 # 📝 Publications 
 ## Conference
@@ -65,10 +68,6 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society 2024 
 - Hidden Markov Model for eyeball movement analysis
 </div>
 </div>
-
-
-# 📖 Educations
-- *2021.09 - 2025.06*, BSc in Computer Science, City University of Hong Kong
 
 
 # 💻 Internships
