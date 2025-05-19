@@ -72,7 +72,7 @@ Proceedings of the 46th Annual Conference of the Cognitive Science Society 2024 
 
 # 💻 Internships
 - *2024.09 - 2024.12*, Machine Learning Engineer Intern (in LLM), Baidu, Inc. - TPG - NLP Group (百度自然语言处理部), Shenzhen.
-- *2024.05 - 2024.08*, Machine Learning Engineer Intern (in LLM), Alibaba Group - Alibaba Holding - Risk and Security Dept (阿里巴巴控股集团), Hangzhou.
+- *2024.05 - 2024.08*, Machine Learning Engineer Intern (in LLM), Alibaba Group - Alibaba Holding (阿里巴巴控股集团), Hangzhou.
 - *2023.09 - 2024.05*, Research Assistant, [VISAL Lab](http://visal.cs.cityu.edu.hk/), Department of Computer Science, CityU, Hong Kong.
 
   
