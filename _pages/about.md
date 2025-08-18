@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I'm Wang Zixuan (王子瑄). I'm now a final-year Computer Science undergraduate at City University of Hong Kong.
+Hi, I'm Wang Zixuan (王子瑄). I'm now a master of Computer Science student at Johns Hopkins University. Before that, I graduated from City University of Hong Kong with a bachelor’s degree in Computer Science.
 
 My research interests lie in Large Language Models, especially the interpretability, safety, and multimodal application. 
 
@@ -25,6 +25,7 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 
 # 📖 Educations
+- *2025.08 - now*, MSE in Computer Science, Johns Hopkins University
 - *2021.09 - 2025.06*, BSc in Computer Science, City University of Hong Kong
 
 
