@@ -34,7 +34,7 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 <div class='paper-box-text' markdown="1">
 
-Speaker’s Use of Mental Verbs to Convey Belief States: A Comparison between Humans and Large Language Model (LLM) 
+[Speaker’s Use of Mental Verbs to Convey Belief States: A Comparison between Humans and Large Language Model (LLM)](https://scholars.cityu.edu.hk/en/publications/speakers-use-of-mental-verbs-to-convey-belief-states-a-comparison) 
 
 Ruoxi Qi, **Zixuan Wang**, Antoni B. Chan, and Janet H. Hsiao
 <br/><br/>
