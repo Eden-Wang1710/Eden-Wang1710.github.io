@@ -25,8 +25,8 @@ I use blogs to record my learning: [Eden's machine learning notebooks](https://w
 
 
 # 📖 Educations
-- *2025.08 - now*, MSE in Computer Science, Johns Hopkins University
-- *2021.09 - 2025.06*, BSc in Computer Science, City University of Hong Kong
+- *2025.08 - now*, Master of Science in Engineering in Computer Science, Johns Hopkins University
+- *2021.09 - 2025.06*, Bachelor of Science in Computer Science, City University of Hong Kong
 
 
 # 📝 Publications 
