@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-Hi, I'm Wang Zixuan (王子瑄). I'm now a master of Computer Science student at Johns Hopkins University. Before that, I graduated from City University of Hong Kong with a bachelor’s degree in Computer Science, advised by Prof. Antoni Bert Chan.
+Hi, I'm Zixuan Wang (王子瑄). I'm now a master of Computer Science student at Johns Hopkins University. Before that, I graduated from City University of Hong Kong with a bachelor’s degree in Computer Science, advised by Prof. Antoni Bert Chan.
 
 My research interests focus on **Large Language Models**, primarily in two areas: trustworthiness (*safety*, and *interpretability*) and applications (including *Multi-modal LLM* and *agentic reinforcement learning*).
 
