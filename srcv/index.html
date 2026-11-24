@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="description" content="SRCV: An Enhanced Harness for Evidence-Grounded Agentic Reasoning. Mid-report by Zixuan Wang and Guangyao Dou, Johns Hopkins University.">
+<title>SRCV: An Enhanced Harness for Evidence-Grounded Agentic Reasoning</title>
+<link rel="stylesheet" href="assets/report.css"><link rel="stylesheet" href="assets/interactive.css"></head>
+<body>
+<div class="reading-progress" aria-hidden="true"><span></span></div><a href="#report" class="skip-link">Skip to report</a>
+<header><div class="wrap nav"><a class="brand" href="#report">SRCV</a><nav class="nav-links" aria-label="Report sections"><a class="section-link" href="#introduction">Introduction</a><a class="section-link" href="#method">Method</a><a class="section-link" href="#experiments">Experiments</a><a class="section-link" href="#case-study">Case study</a><a class="section-link" href="#next-steps">Next steps</a><a href="trajectories/q68.html" class="trajectory-nav">Trajectory →</a><a class="pdf-link pdf-download" href="assets/report.pdf" download="SRCV_Mid_Report_Zixuan_Wang.pdf">Full report (PDF) ↓</a></nav></div></header>
+<main id="report" class="wrap">
+<section class="hero" aria-labelledby="report-title">
+<p class="eyebrow">Mid-report · Fall 2026 · November 24, 2026</p>
+<h1 id="report-title">SRCV: AN ENHANCED HARNESS FOR EVIDENCE-GROUNDED AGENTIC REASONING</h1>
+<div class="authors"><p class="byline"><strong>Zixuan Wang</strong><br>Department of Computer Science<br>Johns Hopkins University</p><p class="byline"><strong>Guangyao Dou</strong><br>Department of Computer Science<br>Johns Hopkins University</p></div>
+<p class="lead">Preliminary results show that SRCV improves SARA-Numeric accuracy from <strong>22.9% to 48.6%</strong> on Terminus-2 and from <strong>11.4% to 51.4%</strong> on KIRA. On BrowseComp-Plus, SRCV improves accuracy from <strong>28.0% to 52.0%</strong> compared with CLM-Agent.</p>
+<div class="hero-actions"><a class="button-primary" href="trajectories/q68.html">Explore trajectory <span aria-hidden="true">→</span></a><a class="button-quiet" href="#experiments">View results ↓</a></div></section>
+<section id="introduction" class="section" aria-labelledby="introduction-title">
+<h2 id="introduction-title"><span class="section-number">1</span>Introduction</h2>
+<div class="reading">
+<p>Large language model (LLM) agents can solve complex tasks by interacting with external tools to acquire evidence and perform multi-step reasoning. In legal reasoning, DeonticBench evaluates whether models can apply explicit rules to case-specific facts, while DAR extends this setting with agentic harnesses for accessing statutes and executing computations. The agent must examine a given statute, identify the applicable provisions, conditions, and exceptions, and reason about their implications for the case. In contrast, BrowseComp-Plus evaluates agents on complex questions that require searching a large collection of web documents and combining evidence from multiple sources. While the former emphasizes selecting and applying rules from a given document, the latter emphasizes discovering relevant evidence across a much larger search space.</p>
+<p>Existing agent harnesses, such as Terminus-2 and KIRA, largely rely on a single agent to retrieve, reason, and answer. As the agent interacts with tools, its context accumulates search queries, retrieved documents, intermediate reasoning, and repeated tool outputs, making it difficult to maintain relevant evidence throughout long trajectories. Recent work, such as SelfCompact and Context Language Models, explores adaptive context management to address growing interaction histories. However, these approaches primarily manage information after it has entered the agent’s context, rather than controlling which information enters the main reasoning trajectory in the first place, which allows irrelevant evidence and redundant tool outputs to accumulate before compaction is triggered, potentially compromising the agent’s ability to manage its context effectively.</p>
+<p>To address this limitation, we develop a <strong>Solver–Reader–Compaction–Verifier (SRCV) Harness</strong> that combines proactive and reactive context management. The reader proactively selects relevant evidence while keeping its intermediate retrieval process outside the solver’s main trajectory. The compaction module subsequently manages the accumulated context by preserving essential evidence and reasoning while removing redundant information. A rubrics-based verifier examines candidate answers against the source evidence and provides feedback for revision. The design is implemented at the harness level, allowing it to be integrated with different base agents.</p>
+</div>
+</section>
+<section id="method" class="section" aria-labelledby="method-title">
+<h2 id="method-title" class="method-title"><span class="section-number">2</span>Method: SRCV (Solver–Reader–Compaction–Verifier) Harness</h2>
+<h3><span class="subnumber">2.1</span>Architecture Overview</h3>
+<figure class="figure" id="figure-1">
+<button type="button" class="figure-button" data-figure="architecture" aria-label="Enlarge Figure 1: SRCV Harness"><img src="assets/architecture.webp" width="1616" height="973" alt="Original report Figure 1: SRCV Harness. The solver maintains the main context and exchanges queries and evidence with the reader, history and compacted context with the compaction agent, and candidate answers and feedback with an independent verifier." loading="lazy"></button>
+<div class="figure-toolbar"><span>Click the figure to enlarge</span></div>
+<figcaption><span class="figure-label">Figure 1:</span> Overview of SRCV (Solver–Reader–Compaction–Verifier) Harness.</figcaption>
+</figure>
+<div class="reading"><p>We introduce SRCV, a harness that combines proactive evidence selection, reactive context compaction, and reasoning verification. Given a task <i>x</i> and an external evidence source <i>D</i>, SRCV organizes the agent’s workflow into four roles: Solver, Reader, Compaction, and Verifier. All four roles use the same underlying language model, with role-specific instructions and skills. The solver maintains the main reasoning trajectory, while the reader and compaction module operate on branches of its context. The verifier independently examines candidate answers against the source evidence. This separation allows harness to control the information entering the main agent’s context, manage its accumulated history, and provide feedback for answer revision.</p></div>
+<h3><span class="subnumber">2.2</span>Proactive and Reactive Context Management</h3>
+<div class="reading">
+<p><span class="role-name">Solver.</span> The solver is the main agent responsible for planning, tool calling, and reasoning to produce the final answer. The solver can request additional evidence from the reader through a query, or invoke compaction when its context becomes redundant or approaches the context limit.</p>
+<p><span class="role-name">Reader: Proactive Context Control.</span> Rather than allowing the main agent to directly accumulate all retrieved documents, SRCV delegates evidence acquisition to a reader agent. In DeonticBench, the reader identifies applicable statutes, including relevant conditions and exceptions. In BrowseComp-Plus, it searches a large document collection for evidence relevant to the query.</p>
+<p>In BrowseComp-Plus, we implement a selective reader as in Figure 2 that initially examines only the first 512 tokens of each retrieved document and assesses its relevance to the task. When further inspection is needed, the reader can selectively retrieve additional line ranges (OPEN) or search for specific phrases (FIND), with at most three additional actions per document. Only the selected source passages are forwarded verbatim to the solver, while the reader’s intermediate processing remains outside the solver’s context.</p>
+</div>
+<figure class="figure" id="figure-2">
+<button type="button" class="figure-button" data-figure="reader" aria-label="Enlarge Figure 2: Selective Reader"><img src="assets/reader.webp" width="1774" height="887" alt="Original report Figure 2: Selective Reader. Retrieved documents are scanned using the first 512 tokens. The reader drops irrelevant documents, explores using OPEN and FIND up to three additional times when needed, or returns selected evidence to the solver." loading="lazy"></button>
+<div class="figure-toolbar"><span>Click the figure to enlarge</span></div>
+<figcaption><span class="figure-label">Figure 2:</span> Overview of the selective reader. The reader inspects document prefixes and selectively explores relevant documents before passing selected evidence to the solver.</figcaption>
+</figure>
+<div class="reading">
+<p><span class="role-name">Compaction: Reactive Context Management.</span> Although the reader limits full documents entering the main trajectory, the solver’s context continues to grow through multi-turn retrieved evidence and reasoning steps. SRCV therefore introduces a complementary compaction module that reorganizes the accumulated context. When invoked by the solver, the compaction agent identifies the task state, essential evidence, and intermediate results needed for subsequent process.</p>
+<p><span class="role-name">Prefix Caching.</span> To reduce the inference overhead introduced by subagents, we leverage prefix KV-cache reuse. On DAR, the reader and compaction agents operate as branches of the solver’s context, sharing its existing prefix rather than recomputing the entire trajectory. On BrowseComp-Plus, successive selective reader actions reuse the cached prefix of the same reading session. This design reduces redundant prefill computation and mitigates the additional inference cost of SRCV.</p>
+</div>
+<h3><span class="subnumber">2.3</span>Self-Verification</h3>
+<div class="reading"><p><span class="role-name">Verifier: Rubrics-Grounded Verification.</span> Before finalizing an answer, SRCV invokes a verifier to examine the solver’s candidate answer against the source evidence. Using three complementary rubrics, the verifier assesses evidence coverage, alignment between the evidence and task, and the logical consistency of the reasoning and final answer. The feedback identifies potentially missing evidence or unsupported reasoning and allows the solver to revise its answer.</p></div>
+</section>
+<section id="experiments" class="section" aria-labelledby="experiments-title">
+<h2 id="experiments-title"><span class="section-number">3</span>Experiments</h2>
+<details class="setting" id="setting"><summary><span><span class="subnumber">3.1</span>Setting</span></summary><div class="details-content reading">
+<p><strong>Models.</strong> We evaluate SRCV using two open-weight language models: Qwen3.5-35B-A3B for DAR and Qwen3.5-9B for BrowseComp-Plus. All models are served locally using vLLM 0.20.1 on an NVIDIA DGX Spark. For DAR, we use BF16 precision, a 65k-token model context window, and a maximum of 16k generated tokens per turn, with a 32k-token compaction threshold. We enable thinking mode and use temperature 0.7, top-p 0.95, and top-k 20. For BrowseComp-Plus, we follow the CLM-Agent setup with a 28k-token context budget and a maximum of 100 agent steps.</p>
+<p><strong>Base Harnesses.</strong> On DAR, we evaluate SRCV with two base harnesses: Terminus-2 and Terminus-KIRA. Terminus-2 uses shell-based tool execution, while KIRA extends it with native tool calling. We compare SRCV against their original implementations under the DAR evaluation framework. On BrowseComp-Plus, we build upon the released CLM-Agent, which uses a Mini-SWE-Agent-based execution loop and allows the model to edit its accumulated context. SRCV extends these base harnesses with dedicated reader and verifier roles, while retaining their underlying agent execution mechanisms.</p>
+<p><strong>Benchmarks.</strong> We evaluate SRCV on two complementary benchmarks. For deontic reasoning, we use the SARA hard split of DeonticBench. SARA-Numeric contains 35 cases requiring numerical tax calculations, while SARA-Binary contains 30 cases requiring Entailment or Contradiction judgments. For large-scale information retrieval, we use BrowseComp-Plus, which consists of 830 challenging questions over a fixed corpus of approximately 100k web documents. Our preliminary evaluation uses a fixed 50-question subset. We use Qwen3-Embedding-8B with the released retrieval index to retrieve the top 10 documents per search.</p>
+<p><strong>Evaluation Protocol.</strong> We report exact-match accuracy for SARA-Numeric and macro-F1 for SARA-Binary. For BrowseComp-Plus, we evaluate answer correctness using Qwen3.5-35B-A3B as a judge with temperature 0, following the benchmark’s grading template. Missing answers are counted as incorrect. Alongside task performance, we measure inference cost to characterize the accuracy–cost trade-off. For DAR, we estimate cost from token usage using a fixed pricing scheme. For BrowseComp-Plus, we report average PFLOPs per question, accounting for prefix KV-cache reuse by counting shared prompt prefixes only once per trial.</p>
+</div></details>
+<h3 class="result-heading"><span class="subnumber">3.2</span>Result</h3>
+<div class="table-block" id="table-1">
+<p class="caption" id="table-1-caption"><strong>Table 1:</strong> Performance and estimated cost on SARA with Qwen3.5-35B-A3B. Scores are percentages; numeric accuracy includes correct-case counts. Costs are US cents per case with prompt caching. Bold indicates the better score within each harness.</p>
+<div class="table-wrap" role="region" aria-labelledby="table-1-caption" tabindex="0"><table class="table-one" aria-labelledby="table-1-caption"><thead><tr><th rowspan="2" scope="col">Harness</th><th rowspan="2" scope="col" class="method-col">Method</th><th colspan="2" scope="colgroup">SARA-Numeric</th><th colspan="2" scope="colgroup">SARA-Binary</th></tr><tr><th scope="col">Accuracy ↑</th><th scope="col">Cost ↓</th><th scope="col">Macro-F1 ↑</th><th scope="col">Cost ↓</th></tr></thead><tbody><tr><td rowspan="2">Terminus-2</td><td class="method-col">Baseline</td><td>22.9 (8/35)</td><td>1.54</td><td><strong>83.3</strong></td><td>0.59</td></tr><tr><td class="method-col">SRCV (ours)</td><td><strong>48.6 (17/35)</strong></td><td>4.74</td><td>79.9</td><td>3.04</td></tr><tr class="group-start"><td rowspan="2">Terminus-KIRA</td><td class="method-col">Baseline</td><td>11.4 (4/35)</td><td>1.37</td><td>82.9</td><td>0.78</td></tr><tr><td class="method-col">SRCV (ours)</td><td><strong>51.4 (18/35)</strong></td><td>4.40</td><td><strong>86.6</strong></td><td>2.77</td></tr></tbody></table></div>
+</div>
+<div class="reading result-analysis"><p>Table 1 shows that SRCV improves SARA-Numeric accuracy by 25.7 and 40.0 percentage points on Terminus-2 and Terminus-KIRA, respectively.</p></div>
+<div class="table-block" id="table-2">
+<p class="caption" id="table-2-caption"><strong>Table 2:</strong> Performance and compute cost on BrowseComp-Plus with Qwen3.5-9B in the zero-shot setting. The baseline is our run of the released CLM-Agent. Compute is reported as average PFLOPs per question.</p>
+<div class="table-wrap" role="region" aria-labelledby="table-2-caption" tabindex="0"><table class="table-two" aria-labelledby="table-2-caption"><thead><tr><th scope="col">Harness</th><th scope="col">Method</th><th scope="col">Accuracy (%) ↑</th><th scope="col">PFLOPs/question ↓</th></tr></thead><tbody><tr><td rowspan="2">Mini-SWE-Agent</td><td class="method-col">CLM-Agent</td><td>28.0 (14/50)</td><td>3.20</td></tr><tr><td class="method-col">SRCV (ours)</td><td><strong>52.0 (26/50)</strong></td><td>3.90</td></tr></tbody></table></div>
+</div>
+<div class="reading result-analysis"><p>On BrowseComp-Plus (Table 2), SRCV improves accuracy from 28.0% to 52.0% compared with CLM-Agent. Trajectory analysis suggests two main benefits of reader-mediated evidence acquisition.</p></div>
+<div class="table-block" id="table-3">
+<p class="caption" id="table-3-caption"><strong>Table 3:</strong> Failure analysis on the BrowseComp-Plus subset. Termination reasons among unsuccessful trials.</p>
+<div class="table-wrap" role="region" aria-labelledby="table-3-caption" tabindex="0"><table aria-labelledby="table-3-caption"><thead><tr><th scope="col">Failure Type</th><th scope="col">CLM-Agent</th><th scope="col">SRCV (ours)</th></tr></thead><tbody><tr><td>Fail to compact</td><td>32</td><td>0</td></tr><tr><td>Step limit</td><td>4</td><td>24</td></tr><tr><td>Incorrect submission</td><td>0</td><td>0</td></tr><tr class="table-total"><td>Total failures</td><td>36</td><td>24</td></tr></tbody></table></div>
+</div>
+<div class="table-block" id="table-4">
+<p class="caption" id="table-4-caption"><strong>Table 4:</strong> Evidence acquisition efficiency on BrowseComp-Plus.</p>
+<div class="table-wrap" role="region" aria-labelledby="table-4-caption" tabindex="0"><table class="table-four" aria-labelledby="table-4-caption"><thead><tr><th scope="col">Metric</th><th scope="col">CLM-Agent</th><th scope="col">SRCV (ours)</th><th scope="col">Change</th></tr></thead><tbody><tr><td>Documents examined / task ↑</td><td>61.8</td><td>140.9</td><td>2.28×</td></tr><tr><td>Solver context (chars / result) ↓</td><td>1,936</td><td>236</td><td>−87.8%</td></tr></tbody></table></div>
+</div>
+<div class="reading result-analysis">
+<p>First, filtering retrieved documents before they enter the solver’s context reduces context accumulation. As shown in Table 3, 32 of the 36 unsuccessful CLM-Agent trials terminated after exhausting context-limit recovery attempts, compared with none under SRCV. Second, reader-mediated retrieval enables broader document exploration under a fixed context budget. As shown in Table 4, SRCV examines 2.28 times as many documents per question while reducing the solver’s context load per search result by 87.8%.</p>
+<p>However, these improvements come with additional inference cost, motivating further improvement of cost efficiency.</p>
+</div>
+</section>
+<section id="case-study" class="section" aria-labelledby="case-study-title">
+<h2 id="case-study-title"><span class="section-number">4</span>Case Study: CLM-Agent vs. SRCV v0.2</h2>
+<div class="reading">
+<p><span><strong>BrowseComp-Plus, Question 68.</strong> Both systems retrieve the same three relevant documents in their first search. A supporting clue lies beyond the first 512 tokens. CLM-Agent opens the full document but loses it to a context-limit rollback. SRCV’s selective reader reads further and forwards the relevant evidence.</span></p>
+<p>CLM-Agent exhausts all six context-limit recovery attempts without submitting an answer. SRCV submits the correct answer at step 19, after the verifier marks all seven conditions as SUPPORTED and returns ACCEPT.</p>
+</div>
+<div class="table-block case-outcome"><div class="table-wrap" role="region" aria-label="Question 68 outcome comparison" tabindex="0"><table class="case-table" aria-label="Question 68 outcome comparison"><thead><tr><th scope="col">Metric</th><th scope="col">CLM-Agent</th><th scope="col">SRCV v0.2</th></tr></thead><tbody>
+<tr><td>Result</td><td>No answer submitted</td><td>Correct; submitted at step 19</td></tr>
+<tr><td>Searches</td><td>13</td><td>5</td></tr>
+<tr><td>Peak solver context (tokens)</td><td>26,636</td><td>17,238</td></tr>
+<tr><td>PFLOPs</td><td>2.52</td><td>2.25</td></tr>
+</tbody></table></div><p class="case-note">One question, one run per system at temperature 0.7. Context limit: 26,624 tokens. PFLOPs count the conversation prefix once.</p></div>
+<a class="trajectory-launch" href="trajectories/q68.html"><span><span class="launch-kicker">INTERACTIVE CASE STUDY</span><strong>Follow the two trajectories</strong><span>Step-by-step actions, context use, and reader decisions.</span></span><span class="launch-arrow" aria-hidden="true">→</span></a></section>
+<section id="next-steps" class="section" aria-labelledby="next-steps-title">
+<h2 id="next-steps-title"><span class="section-number">5</span>Challenges and Next Steps</h2>
+<div class="reading">
+<p><strong>Inference Cost.</strong> Although SRCV improves answer accuracy, its additional agent calls introduce substantial computational overhead. We plan to investigate more efficient KV-cache reuse and adaptive stopping strategies, inspired by agentic abstention, to reduce unnecessary tool calls and improve the accuracy–cost trade-off.</p>
+<p><strong>Confidence Estimation.</strong> We further aim to estimate answer reliability from the verifier’s assessments. However, preliminary experiments show that both self-verbalized confidence and verifier rubric scores poorly distinguish correct from incorrect answers. We plan to explore representation-based confidence estimation using the verifier’s hidden states.</p>
+</div>
+</section>
+<footer class="footer" id="full-report"><p>Zixuan Wang · Guangyao Dou<br>Department of Computer Science · Johns Hopkins University</p><a class="pdf-link pdf-download" href="assets/report.pdf" download="SRCV_Mid_Report_Zixuan_Wang.pdf">Download full report (PDF) ↓</a></footer>
+<noscript>The report and all trajectory steps can be read without JavaScript.<p class="noscript-note">JavaScript is needed only for figure enlargement and downloading the embedded PDF.</p></noscript>
+</main>
+<dialog class="figure-dialog" id="figure-dialog" aria-labelledby="dialog-title"><div class="dialog-toolbar"><span id="dialog-title">Figure</span><button type="button" id="close-figure">Close ×</button></div><div class="dialog-image-wrap"><img id="dialog-image" alt=""></div></dialog>
+<script src="assets/report.js" defer></script></body>
+</html>

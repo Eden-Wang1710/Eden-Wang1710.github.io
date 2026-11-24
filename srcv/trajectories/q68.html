@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><meta name="description" content="Interactive comparison of CLM-Agent and SRCV trajectories: selective reading, context-limit recovery, verification, and submission."><title>Trajectory Explorer · SRCV</title><link rel="stylesheet" href="../assets/report.css"><link rel="stylesheet" href="../assets/interactive.css"><script src="../assets/trajectory.js" defer></script></head>
+<body class="explorer"><a class="skip-link" href="#explorer">Skip to trajectory</a>
+<header><div class="wrap nav"><a class="brand" href="../index.html">SRCV</a><a class="breadcrumb" href="../index.html#case-study">← Back to report</a><nav class="nav-links" aria-label="Case study navigation"><a href="#reader-analysis">Reader analysis</a><a href="../assets/report.pdf" download="SRCV_Mid_Report_Zixuan_Wang.pdf">PDF ↓</a></nav></div></header>
+<main class="wrap" id="explorer"><section class="hero"><p class="eyebrow">Trajectory explorer / BrowseComp-Plus / Question 68</p><h1>Same retrieval.<br>Different evidence reaching the solver.</h1><p class="subtitle">Follow CLM-Agent and SRCV through one question. Both find the relevant documents immediately; selective reading changes what enters the solver’s context and what survives until the answer.</p><div class="jump-links"><a href="#baseline-9">Jump to lost evidence →</a><a href="#srcv-1">Inspect the reader’s first pass →</a><a href="#srcv-6">Jump to verification →</a></div></section>
+<div class="outcome-strip" aria-label="Trial summary"><div><span class="metric-label">OUTCOME</span><span class="metric-value">No answer <small>→ Correct</small></span><span class="metric-note">CLM-Agent → SRCV</span></div><div><span class="metric-label">PEAK SOLVER CONTEXT</span><span class="metric-value">26,636 <small>→ 17,238</small></span><span class="metric-note">tokens · limit 26,624</span></div><div><span class="metric-label">SEARCHES / ROLLED-BACK TURNS</span><span class="metric-value">13 / 20 <small>→ 5 / 0</small></span><span class="metric-note">CLM-Agent → SRCV</span></div><div><span class="metric-label">COMPUTE</span><span class="metric-value">2.52 <small>→ 2.25 PFLOPs</small></span><span class="metric-note">this question only</span></div></div>
+<div class="explorer-toolbar js-controls"><div class="view-buttons" role="group" aria-label="Choose trajectory view"><button type="button" data-view="compare" aria-pressed="true">Compare</button><button type="button" data-view="baseline" aria-pressed="false">CLM-Agent</button><button type="button" data-view="srcv" aria-pressed="false">SRCV</button></div><div class="tools"><label class="search-label" for="step-search">Find a step <input id="step-search" type="search" placeholder="e.g. rollback, verify" autocomplete="off"></label><button id="expand-all" type="button">Expand all</button><button id="collapse-all" type="button">Collapse all</button></div></div>
+<p class="live-status" id="status" aria-live="polite"></p>
+<div class="trajectory-grid" id="tracks">
+<section class="track baseline" id="baseline" aria-label="CLM-Agent trajectory"><div class="track-heading"><div class="track-top"><h2>CLM-Agent</h2><span class="track-tag">No submission</span></div><p class="track-intro">Full snippets and documents accumulate; context-limit recovery removes recent evidence.</p><div class="step-controls js-controls"><button type="button" data-prev="baseline" aria-label="Previous CLM-Agent milestone">← Previous</button><button type="button" data-next="baseline" aria-label="Next CLM-Agent milestone">Next →</button><span class="position" data-position="baseline"></span></div></div><div class="step-list"><details class="step" id="baseline-1" open data-step="0">
+<summary><span class="step-number">1</span><span class="step-title">First search<span class="step-type">search</span></span></summary>
+<div class="step-content"><code class="tool-code">Search the corpus for the question’s constraints.</code><p>The search returns ten 512-token snippets: 24,174 characters. The three relevant documents are already among the results.</p>
+<div class="context-label"><span>Solver context · 25.1% of limit</span><strong>6,671</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="6671" aria-valuetext="6,671 tokens; context limit 26,624"><div class="context-fill" style="width:25.06%"></div></div>
+
+<div class="step-footer"><span class="step-flag">Relevant documents retrieved</span><button class="share-button js-controls" type="button" data-link="baseline-1">Copy step link →</button></div></div></details>
+<details class="step" id="baseline-2"  data-step="1">
+<summary><span class="step-number">2</span><span class="step-title">Open the first source<span class="step-type">get_document</span></span></summary>
+<div class="step-content"><code class="tool-code">Open a relevant source document.</code><p>The tool returns the full 2,535-character document.</p>
+<div class="context-label"><span>Solver context · 28.7% of limit</span><strong>7,647</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="7647" aria-valuetext="7,647 tokens; context limit 26,624"><div class="context-fill" style="width:28.72%"></div></div>
+
+<div class="step-footer"><span class="step-flag">Full document enters context</span><button class="share-button js-controls" type="button" data-link="baseline-2">Copy step link →</button></div></div></details>
+<details class="step" id="baseline-3"  data-step="2">
+<summary><span class="step-number">3</span><span class="step-title">Open a second source<span class="step-type">get_document</span></span></summary>
+<div class="step-content"><code class="tool-code">Open a second relevant source document.</code><p>The tool returns 8,203 characters. The requested answer is present, but the solver continues looking for a supporting clue.</p>
+<div class="context-label"><span>Solver context · 34.9% of limit</span><strong>9,281</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="9281" aria-valuetext="9,281 tokens; context limit 26,624"><div class="context-fill" style="width:34.86%"></div></div>
+
+<div class="step-footer"><span class="step-flag">Answer present; checking continues</span><button class="share-button js-controls" type="button" data-link="baseline-3">Copy step link →</button></div></div></details>
+<details class="step" id="baseline-4"  data-step="3">
+<summary><span class="step-number">4</span><span class="step-title">Search for supporting evidence<span class="step-type">search</span></span></summary>
+<div class="step-content"><code class="tool-code">Search again to verify the remaining clue.</code><p>The search returns 23,283 characters, adding many repeated snippets to the main trajectory.</p>
+<div class="context-label"><span>Solver context · 55.0% of limit</span><strong>14,632</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="14632" aria-valuetext="14,632 tokens; context limit 26,624"><div class="context-fill" style="width:54.96%"></div></div>
+
+<div class="step-footer"><span class="step-flag">Repeated evidence accumulates</span><button class="share-button js-controls" type="button" data-link="baseline-4">Copy step link →</button></div></div></details>
+<details class="step" id="baseline-5"  data-step="4">
+<summary><span class="step-number">5</span><span class="step-title">Search again<span class="step-type">search</span></span></summary>
+<div class="step-content"><code class="tool-code">Run another search for the same supporting constraint.</code><p>The search adds approximately 22,800 characters.</p>
+<div class="context-label"><span>Solver context · 74.8% of limit</span><strong>19,915</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="19915" aria-valuetext="19,915 tokens; context limit 26,624"><div class="context-fill" style="width:74.80%"></div></div>
+
+<div class="step-footer"><span class="step-flag">Context approaches its limit</span><button class="share-button js-controls" type="button" data-link="baseline-5">Copy step link →</button></div></div></details>
+<details class="step" id="baseline-6"  data-step="5">
+<summary><span class="step-number">6</span><span class="step-title">The clue falls beyond the snippet<span class="step-type">search · rollback</span></span></summary>
+<div class="step-content"><code class="tool-code">Search for evidence connecting the remaining constraint.</code><p>The result returns 21,421 characters. The key source’s snippet ends before the supporting clue. The run subsequently exceeds the context limit, and recovery rolls back turns.</p>
+<div class="context-label"><span>Solver context · 94.6% of limit</span><strong>25,184</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="25184" aria-valuetext="25,184 tokens; context limit 26,624"><div class="context-fill" style="width:94.59%"></div></div>
+<p class="step-note">25,184 is the recorded snapshot before the subsequent overflow.</p>
+<div class="step-footer"><span class="step-flag">Context-limit recovery</span><button class="share-button js-controls" type="button" data-link="baseline-6">Copy step link →</button></div></div></details>
+<details class="step" id="baseline-7"  data-step="6">
+<summary><span class="step-number">7</span><span class="step-title">Repeat an earlier search<span class="step-type">search</span></span></summary>
+<div class="step-content"><code class="tool-code">Repeat a previous evidence search.</code><p>The search returns 22,778 characters. A previously retrieved source appears again.</p>
+<div class="context-label"><span>Solver context · 75.7% of limit</span><strong>20,159</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="20159" aria-valuetext="20,159 tokens; context limit 26,624"><div class="context-fill" style="width:75.72%"></div></div>
+
+<div class="step-footer"><span class="step-flag">Recovery removes recent context</span><button class="share-button js-controls" type="button" data-link="baseline-7">Copy step link →</button></div></div></details>
+<details class="step" id="baseline-8"  data-step="7">
+<summary><span class="step-number">8–10</span><span class="step-title">Intermediate turns are lost<span class="step-type">rollback</span></span></summary>
+<div class="step-content"><code class="tool-code">Recover from the context limit.</code><p>The comparison groups these turns because they were lost during recovery.</p>
+<div class="context-label"><span>Solver context · 75.9% of limit</span><strong>≈ 20,200</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="20200" aria-valuetext="≈ 20,200 tokens; context limit 26,624"><div class="context-fill" style="width:75.87%"></div></div>
+<p class="step-note">Approximate context: about 20,200 tokens. This is a grouped milestone.</p>
+<div class="step-footer"><span class="step-flag">Turns rolled back</span><button class="share-button js-controls" type="button" data-link="baseline-8">Copy step link →</button></div></div></details>
+<details class="step" id="baseline-9"  data-step="8">
+<summary><span class="step-number">11</span><span class="step-title">Find the clue, then lose the document<span class="step-type">get_document · rollback</span></span></summary>
+<div class="step-content"><code class="tool-code">Open the source containing the missing supporting clue.</code><p>The complete document returns 10,625 characters. It is subsequently rolled back with the surrounding turns, so the solver loses the evidence again.</p>
+<div class="context-label"><span>Solver context · 85.4% of limit</span><strong>22,727</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="22727" aria-valuetext="22,727 tokens; context limit 26,624"><div class="context-fill" style="width:85.36%"></div></div>
+<p class="step-note">22,727 is the reported snapshot before the subsequent rollback.</p>
+<div class="step-footer"><span class="step-flag">Relevant evidence lost</span><button class="share-button js-controls" type="button" data-link="baseline-9">Copy step link →</button></div></div></details>
+<details class="step" id="baseline-10"  data-step="9">
+<summary><span class="step-number">12–15</span><span class="step-title">Continue repeated searches<span class="step-type">search</span></span></summary>
+<div class="step-content"><code class="tool-code">Run four more searches for the supporting evidence.</code><p>Each search returns about 22,000 characters. The comparison reports context rising to 25,425 tokens across this group.</p>
+<div class="context-label"><span>Solver context · 95.5% of limit</span><strong>Up to 25,425</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="25425" aria-valuetext="Up to 25,425 tokens; context limit 26,624"><div class="context-fill" style="width:95.50%"></div></div>
+<p class="step-note">Group maximum: up to 25,425 tokens; individual snapshots are not available here.</p>
+<div class="step-footer"><span class="step-flag">No answer submitted</span><button class="share-button js-controls" type="button" data-link="baseline-10">Copy step link →</button></div></div></details>
+<details class="step" id="baseline-11"  data-step="10">
+<summary><span class="step-number">16</span><span class="step-title">Search after the final-turn notice<span class="step-type">search · termination</span></span></summary>
+<div class="step-content"><code class="tool-code">Search again instead of writing the answer.</code><p>The run exhausts all six context-limit recovery attempts. Twenty turns have been rolled back, and no answer file is submitted.</p>
+<div class="context-label"><span>Solver context · 100.0% of limit (exceeded)</span><strong>26,636</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="26624" aria-valuetext="26,636 tokens; context limit 26,624"><div class="context-fill" style="width:100.00%"></div></div>
+<p class="step-note">The reported context exceeds the 26,624-token limit by 12 tokens.</p>
+<div class="step-footer"><span class="step-flag">No answer · context limit reached</span><button class="share-button js-controls" type="button" data-link="baseline-11">Copy step link →</button></div></div></details></div><p class="empty" hidden>No matching steps in CLM-Agent.</p></section>
+<section class="track srcv" id="srcv" aria-label="SRCV trajectory"><div class="track-heading"><div class="track-top"><h2>SRCV v0.2</h2><span class="track-tag">Correct · step 19</span></div><p class="track-intro">The reader explores separately and forwards selected evidence; the solver verifies and submits.</p><div class="step-controls js-controls"><button type="button" data-prev="srcv" aria-label="Previous SRCV milestone">← Previous</button><button type="button" data-next="srcv" aria-label="Next SRCV milestone">Next →</button><span class="position" data-position="srcv"></span></div></div><div class="step-list"><details class="step" id="srcv-1" open data-step="0">
+<summary><span class="step-number">1</span><span class="step-title">Search with selective reading<span class="step-type">search · reader</span></span></summary>
+<div class="step-content"><code class="tool-code">Search the corpus; inspect prefixes and selected additional lines.</code><p>Ten evidence cards return 9,141 characters. The reader reads beyond the initial prefix and passes on the supporting clue. The solver already receives the required facts.</p>
+<div class="context-label"><span>Solver context · 15.8% of limit</span><strong>4,205</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="4205" aria-valuetext="4,205 tokens; context limit 26,624"><div class="context-fill" style="width:15.79%"></div></div>
+
+<div class="step-footer"><span class="step-flag">Required evidence reaches solver</span><button class="share-button js-controls" type="button" data-link="srcv-1">Copy step link →</button></div></div></details>
+<details class="step" id="srcv-2"  data-step="1">
+<summary><span class="step-number">2–6</span><span class="step-title">Read targeted evidence<span class="step-type">read_document</span></span></summary>
+<div class="step-content"><code class="tool-code">Make five targeted reading calls across the same three sources.</code><p>Each reply returns about 550–1,800 characters. The solver revisits evidence relevant to individual constraints.</p>
+<div class="context-label"><span>Solver context · 24.8% of limit</span><strong>6,609</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="6609" aria-valuetext="6,609 tokens; context limit 26,624"><div class="context-fill" style="width:24.82%"></div></div>
+<p class="step-note">Snapshot at the end of this group; individual calls are not reconstructed.</p>
+<div class="step-footer"><span class="step-flag">Selected passages only</span><button class="share-button js-controls" type="button" data-link="srcv-2">Copy step link →</button></div></div></details>
+<details class="step" id="srcv-3"  data-step="2">
+<summary><span class="step-number">7–8</span><span class="step-title">Cross-check two constraints<span class="step-type">search</span></span></summary>
+<div class="step-content"><code class="tool-code">Run two additional evidence searches.</code><p>Later searches return about 3,000 characters each, substantially smaller than the baseline’s search results.</p>
+<div class="context-label"><span>Solver context · 35.9% of limit</span><strong>9,560</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="9560" aria-valuetext="9,560 tokens; context limit 26,624"><div class="context-fill" style="width:35.91%"></div></div>
+<p class="step-note">Snapshot at the end of this group.</p>
+<div class="step-footer"><span class="step-flag">Compact evidence cards</span><button class="share-button js-controls" type="button" data-link="srcv-3">Copy step link →</button></div></div></details>
+<details class="step" id="srcv-4"  data-step="3">
+<summary><span class="step-number">9–14</span><span class="step-title">Continue checking<span class="step-type">read_document · search</span></span></summary>
+<div class="step-content"><code class="tool-code">Alternate targeted reading with two additional searches.</code><p>Four more reading calls and two searches revisit evidence before the solver organizes its state.</p>
+<div class="context-label"><span>Solver context · 53.0% of limit</span><strong>14,120</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="14120" aria-valuetext="14,120 tokens; context limit 26,624"><div class="context-fill" style="width:53.03%"></div></div>
+<p class="step-note">Snapshot at the end of this group.</p>
+<div class="step-footer"><span class="step-flag">Some redundant work remains</span><button class="share-button js-controls" type="button" data-link="srcv-4">Copy step link →</button></div></div></details>
+<details class="step" id="srcv-5"  data-step="4">
+<summary><span class="step-number">15</span><span class="step-title">Organize the facts<span class="step-type">state table</span></span></summary>
+<div class="step-content"><code class="tool-code">Write a state table with source-line citations.</code><p>Each fact is linked to its supporting evidence using a document-and-line citation.</p>
+<div class="context-label"><span>Solver context · 56.3% of limit</span><strong>15,000</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="15000" aria-valuetext="15,000 tokens; context limit 26,624"><div class="context-fill" style="width:56.34%"></div></div>
+
+<div class="step-footer"><span class="step-flag">Facts linked to evidence</span><button class="share-button js-controls" type="button" data-link="srcv-5">Copy step link →</button></div></div></details>
+<details class="step" id="srcv-6"  data-step="5">
+<summary><span class="step-number">16–18</span><span class="step-title">Write, verify, and accept<span class="step-type">verify · answer</span></span></summary>
+<div class="step-content"><code class="tool-code">Verify; write the answer file; verify the written answer.</code><p>The first verification call occurs before an answer file exists. After the answer is written, the second check marks all seven conditions SUPPORTED and returns ACCEPT.</p>
+<div class="context-label"><span>Solver context · 59.5% of limit</span><strong>15,849</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="15849" aria-valuetext="15,849 tokens; context limit 26,624"><div class="context-fill" style="width:59.53%"></div></div>
+<p class="step-note">Snapshot at the end of this group.</p>
+<div class="step-footer"><span class="step-flag">Seven conditions supported</span><button class="share-button js-controls" type="button" data-link="srcv-6">Copy step link →</button></div></div></details>
+<details class="step" id="srcv-7"  data-step="6">
+<summary><span class="step-number">19</span><span class="step-title">Submit the answer<span class="step-type">submit</span></span></summary>
+<div class="step-content"><code class="tool-code">Submit the verified answer.</code><p>The solver submits at step 19. The answer is judged correct, with no context-limit rollback.</p>
+<div class="context-label"><span>Solver context · 60.6% of limit</span><strong>16,129</strong></div>
+<div class="context-meter" role="meter" aria-label="Recorded solver context" aria-valuemin="0" aria-valuemax="26624" aria-valuenow="16129" aria-valuetext="16,129 tokens; context limit 26,624"><div class="context-fill" style="width:60.58%"></div></div>
+<p class="step-note">This milestone is 16,129 tokens. The separately reported run peak is 17,238 tokens.</p>
+<div class="step-footer"><span class="step-flag">Correct answer submitted</span><button class="share-button js-controls" type="button" data-link="srcv-7">Copy step link →</button></div></div></details></div><p class="empty" hidden>No matching steps in SRCV.</p></section></div>
+<aside class="note-box"><p><strong>How to read this view.</strong> These are curated milestones from the trial comparison, not a verbatim message replay. Step ranges preserve the source’s grouping. Context bars show recorded snapshots on a shared 26,624-token scale; rows across columns are not synchronized. The exact question, answer, search terms, and corpus excerpts are omitted from this public page.</p></aside>
+<section class="analysis-section" id="reader-analysis"><h2>What the reader changes</h2><div class="reader-route"><div><h3>Five documents: stop at the prefix</h3><p>Of the first ten search results, five show no relevant connection. The reader stops after the initial window, inspecting only 11–17 lines per document.</p></div><div><h3>Five documents: inspect further</h3><p>The reader uses OPEN and FIND on the promising results. For the source with the missing clue, it uses three OPEN actions and passes on the supporting lines beyond the initial 512-token prefix.</p></div></div>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Context and reading comparison"><table><thead><tr><th scope="col">Metric</th><th scope="col">CLM-Agent</th><th scope="col">SRCV v0.2</th></tr></thead><tbody><tr><td>Solver model calls</td><td>16</td><td>19</td></tr><tr><td>Context after first search</td><td>6,671 tokens</td><td>4,205 tokens</td></tr><tr><td>Characters returned by first search</td><td>24,174</td><td>9,141</td></tr><tr><td>Characters per later search</td><td>About 21,000–23,000</td><td>About 3,000</td></tr><tr><td>Reader documents / documents with an action</td><td>—</td><td>50 / 18</td></tr><tr><td>PFLOPs, shared prefix counted once</td><td>2.52</td><td>2.25 (solver 0.40; reader + verifier 1.85)</td></tr></tbody></table></div>
+<p class="evidence-note">The first-search reader behavior above covers ten documents. The 50 / 18 count refers to the whole SRCV trial.</p></section>
+<section class="analysis-section"><h2>What this example does—and does not—show</h2><p>Selective reading makes the supporting evidence available earlier and keeps the solver’s context smaller. It does not eliminate unnecessary work: SRCV already has the required facts after its first search, yet spends 13 additional steps re-reading and searching before writing its state table.</p><p>These are single runs at temperature 0.7. The lower compute cost on this question does not establish a general advantage: across the 50-question subset, average compute rises from <strong>3.20 to 3.90 PFLOPs</strong> while accuracy rises from <strong>28.0% to 52.0%</strong>.</p><a class="button-quiet" href="../index.html#experiments">View aggregate results →</a></section>
+<noscript>All milestones are available below their expandable headings. Enable JavaScript for filtering, view switching, and step navigation.</noscript></main>
+<footer class="wrap footer"><p>Zixuan Wang · Guangyao Dou<br>Johns Hopkins University · November 24, 2026</p><a href="../index.html#case-study">Return to the report ↑</a></footer></body></html>
