@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc"><title id="title">SRCV Harness</title><desc id="desc">Vector diagram. All text, boxes, and arrows remain sharp at any scale.</desc>
+<rect x="0" y="0" width="1200" height="720" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="600" y="43" font-family="DejaVu Sans,Arial,sans-serif" font-size="32" fill="#172B4D" font-weight="700" text-anchor="middle">SRCV Harness</text>
+<rect x="24" y="111" width="244" height="108" rx="12" fill="#F6F8FB" stroke="#C8D2DF" stroke-width="1.6"/>
+<text x="146" y="155" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#172B4D" font-weight="700" text-anchor="middle">Task / Query</text>
+<text x="146" y="188" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" fill="#172B4D" font-weight="700" text-anchor="middle">x</text>
+<rect x="330" y="84" width="540" height="178" rx="12" fill="#F4F0FA" stroke="#6646AB" stroke-width="1.6"/>
+<rect x="348" y="101" width="354" height="29" rx="7" fill="#6646AB" stroke="none" stroke-width="1.6"/>
+<text x="360" y="121" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Main context  Cₜ = [x, Eₜ, Hₜ]</text>
+<text x="356" y="174" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" fill="#172B4D" font-weight="700" text-anchor="start">Solver Agent</text>
+<text x="356" y="210.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#172B4D" font-weight="400" text-anchor="start">Plan, use tools, and reason over evidence.</text>
+<rect x="932" y="84" width="244" height="178" rx="12" fill="#F6F8FB" stroke="#C8D2DF" stroke-width="1.6"/>
+<text x="1054" y="116" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172B4D" font-weight="700" text-anchor="middle">Candidate answer  ŷₜ</text>
+<rect x="947" y="133" width="214" height="31" rx="5" fill="#E7F1FB" stroke="none" stroke-width="1.6"/>
+<text x="961" y="155" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#172B4D" font-weight="700" text-anchor="start">Evidence  Eₜ</text>
+<rect x="947" y="173" width="214" height="31" rx="5" fill="#FCF0DE" stroke="none" stroke-width="1.6"/>
+<text x="961" y="195" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#172B4D" font-weight="700" text-anchor="start">Reasoning</text>
+<rect x="947" y="213" width="214" height="31" rx="5" fill="#E6F4EC" stroke="none" stroke-width="1.6"/>
+<text x="961" y="235" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#172B4D" font-weight="700" text-anchor="start">Answer</text>
+<polyline points="268,166 330,166" fill="none" stroke="#172B4D" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="322.97933950487703,169.83540430883363 330,166 322.97933950487703,162.16459569116637" fill="none" stroke="#172B4D" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="870,166 932,166" fill="none" stroke="#172B4D" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="924.979339504877,169.83540430883363 932,166 924.979339504877,162.16459569116637" fill="none" stroke="#172B4D" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="386,262 386,294 104,294 104,390" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="100.16459569116637,382.97933950487703 104,390 107.83540430883362,382.97933950487703" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="314,390 314,326 446,326 446,262" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="449.83540430883363,269.02066049512297 446,262 442.16459569116637,269.02066049512297" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="88" y="350" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#1761A0" font-weight="700" text-anchor="end">Query</text>
+<text x="326" y="353.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#1761A0" font-weight="700" text-anchor="start">Selected</text>
+<text x="326" y="375.1" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#1761A0" font-weight="700" text-anchor="start">evidence Eₜ</text>
+<polyline points="568,262 568,390" fill="none" stroke="#A86117" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="564.1645956911664,382.97933950487703 568,390 571.8354043088336,382.97933950487703" fill="none" stroke="#A86117" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="632,390 632,262" fill="none" stroke="#A86117" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="635.8354043088336,269.02066049512297 632,262 628.1645956911664,269.02066049512297" fill="none" stroke="#A86117" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="554" y="345.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#A86117" font-weight="700" text-anchor="end">Compaction</text>
+<text x="554" y="367.1" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#A86117" font-weight="700" text-anchor="end">request</text>
+<text x="646" y="345.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#A86117" font-weight="700" text-anchor="start">Compacted</text>
+<text x="646" y="367.1" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#A86117" font-weight="700" text-anchor="start">context</text>
+<polyline points="752,262 752,326 886,326 886,390" fill="none" stroke="#25704E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="882.1645956911664,382.97933950487703 886,390 889.8354043088336,382.97933950487703" fill="none" stroke="#25704E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1100,390 1100,294 812,294 812,262" fill="none" stroke="#25704E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="815.8354043088336,269.02066049512297 812,262 808.1645956911664,269.02066049512297" fill="none" stroke="#25704E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="875" y="360" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#25704E" font-weight="700" text-anchor="end">ŷₜ + Eₜ</text>
+<text x="1110" y="342.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#25704E" font-weight="700" text-anchor="start">Feedback</text>
+<text x="1110" y="361.5" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#25704E" font-weight="700" text-anchor="start">fₜ</text>
+<rect x="24" y="390" width="360" height="280" rx="12" fill="#F0F7FD" stroke="#1761A0" stroke-width="1.6"/>
+<rect x="40" y="405" width="145" height="29" rx="7" fill="#1761A0" stroke="none" stroke-width="1.6"/>
+<text x="52" y="425" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Context branch</text>
+<text x="44" y="470" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172B4D" font-weight="700" text-anchor="start">Reader Agent</text>
+<text x="44" y="499" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#172B4D" font-weight="400" text-anchor="start">Retrieve and filter evidence.</text>
+<rect x="44" y="521" width="132" height="93" rx="7" fill="#FFFFFF" stroke="#C8D2DF" stroke-width="1.6"/>
+<text x="110" y="546" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#172B4D" font-weight="700" text-anchor="middle">Candidate</text>
+<text x="110" y="568" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#172B4D" font-weight="700" text-anchor="middle">evidence</text>
+<text x="110" y="589" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#52647B" font-weight="400" text-anchor="middle">statute /</text>
+<text x="110" y="607" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#52647B" font-weight="400" text-anchor="middle">web docs</text>
+<polyline points="187,567 210,567" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="202.97933950487703,570.8354043088336 210,567 202.97933950487703,563.1645956911664" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="222" y="521" width="142" height="93" rx="7" fill="#FFFFFF" stroke="#1761A0" stroke-width="1.6"/>
+<text x="293" y="546" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#172B4D" font-weight="700" text-anchor="middle">Selected</text>
+<text x="293" y="568" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#172B4D" font-weight="700" text-anchor="middle">evidence</text>
+<text x="293" y="589" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#52647B" font-weight="400" text-anchor="middle">excerpts +</text>
+<text x="293" y="607" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#52647B" font-weight="400" text-anchor="middle">citations</text>
+<text x="204" y="648" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#1761A0" font-weight="700" text-anchor="middle">Only selected evidence enters solver.</text>
+<rect x="420" y="390" width="360" height="280" rx="12" fill="#FFF7EA" stroke="#A86117" stroke-width="1.6"/>
+<rect x="436" y="405" width="145" height="29" rx="7" fill="#A86117" stroke="none" stroke-width="1.6"/>
+<text x="448" y="425" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Context branch</text>
+<text x="440" y="470" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172B4D" font-weight="700" text-anchor="start">Compaction Agent</text>
+<text x="440" y="499" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#172B4D" font-weight="400" text-anchor="start">Compress and preserve key state.</text>
+<rect x="440" y="521" width="132" height="93" rx="7" fill="#FFFFFF" stroke="#C8D2DF" stroke-width="1.6"/>
+<text x="506" y="557" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172B4D" font-weight="700" text-anchor="middle">Trajectory</text>
+<text x="506" y="583" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172B4D" font-weight="700" text-anchor="middle">history</text>
+<polyline points="583,567 606,567" fill="none" stroke="#A86117" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="598.979339504877,570.8354043088336 606,567 598.979339504877,563.1645956911664" fill="none" stroke="#A86117" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="618" y="521" width="142" height="93" rx="7" fill="#FFFFFF" stroke="#A86117" stroke-width="1.6"/>
+<text x="689" y="557" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172B4D" font-weight="700" text-anchor="middle">Compacted</text>
+<text x="689" y="583" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172B4D" font-weight="700" text-anchor="middle">context</text>
+<text x="600" y="648" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#A86117" font-weight="700" text-anchor="middle">Rebuild the main context.</text>
+<rect x="816" y="390" width="360" height="280" rx="12" fill="#F0F8F3" stroke="#25704E" stroke-width="1.6"/>
+<rect x="832" y="405" width="215" height="29" rx="7" fill="#25704E" stroke="none" stroke-width="1.6"/>
+<text x="844" y="425" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="start">Independent context</text>
+<text x="836" y="470" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172B4D" font-weight="700" text-anchor="start">Verifier Agent</text>
+<text x="836" y="499" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#172B4D" font-weight="400" text-anchor="start">Check the answer against evidence.</text>
+<rect x="836" y="521" width="184" height="93" rx="7" fill="#FFFFFF" stroke="#C8D2DF" stroke-width="1.6"/>
+<text x="848" y="545" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#172B4D" font-weight="700" text-anchor="start">Rubrics</text>
+<rect x="848" y="553" width="8" height="8" rx="1" fill="#FFFFFF" stroke="#25704E" stroke-width="1.1"/>
+<text x="864" y="563" font-family="DejaVu Sans,Arial,sans-serif" font-size="13.5" fill="#172B4D" font-weight="400" text-anchor="start">Evidence coverage</text>
+<rect x="848" y="573" width="8" height="8" rx="1" fill="#FFFFFF" stroke="#25704E" stroke-width="1.1"/>
+<text x="864" y="583" font-family="DejaVu Sans,Arial,sans-serif" font-size="13.5" fill="#172B4D" font-weight="400" text-anchor="start">Relevance</text>
+<rect x="848" y="593" width="8" height="8" rx="1" fill="#FFFFFF" stroke="#25704E" stroke-width="1.1"/>
+<text x="864" y="603" font-family="DejaVu Sans,Arial,sans-serif" font-size="13.5" fill="#172B4D" font-weight="400" text-anchor="start">Grounded reasoning</text>
+<polyline points="1030,567 1046,567" fill="none" stroke="#25704E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1038.979339504877,570.8354043088336 1046,567 1038.979339504877,563.1645956911664" fill="none" stroke="#25704E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1056" y="521" width="100" height="93" rx="7" fill="#FFFFFF" stroke="#25704E" stroke-width="1.6"/>
+<text x="1106" y="547" font-family="DejaVu Sans,Arial,sans-serif" font-size="13.8" fill="#172B4D" font-weight="700" text-anchor="middle">Verification</text>
+<text x="1106" y="571" font-family="DejaVu Sans,Arial,sans-serif" font-size="13.8" fill="#172B4D" font-weight="700" text-anchor="middle">feedback</text>
+<text x="1106" y="595" font-family="DejaVu Sans,Arial,sans-serif" font-size="13.8" fill="#172B4D" font-weight="700" text-anchor="middle">fₜ</text>
+<text x="996" y="648" font-family="DejaVu Sans,Arial,sans-serif" font-size="16" fill="#25704E" font-weight="700" text-anchor="middle">Return feedback for revision.</text>
+<text x="600" y="704" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172B4D" font-weight="700" text-anchor="middle">Read evidence, manage context, verify, and iteratively refine the answer.</text>
+</svg>

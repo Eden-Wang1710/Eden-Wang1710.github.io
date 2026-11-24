@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc"><title id="title">Selective Reader</title><desc id="desc">Vector diagram. All text, boxes, and arrows remain sharp at any scale.</desc>
+<rect x="0" y="0" width="1200" height="600" rx="0" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="600" y="44" font-family="DejaVu Sans,Arial,sans-serif" font-size="32" fill="#172B4D" font-weight="700" text-anchor="middle">Selective Reader</text>
+<rect x="24" y="83" width="240" height="471" rx="12" fill="#F0F7FD" stroke="#1761A0" stroke-width="1.6"/>
+<text x="144" y="126" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#172B4D" font-weight="700" text-anchor="middle">Retrieval</text>
+<rect x="82" y="158" width="105" height="62" rx="5" fill="#FFFFFF" stroke="#93ABC6" stroke-width="1.6"/>
+<rect x="92" y="165" width="105" height="62" rx="5" fill="#FFFFFF" stroke="#93ABC6" stroke-width="1.6"/>
+<rect x="102" y="172" width="105" height="62" rx="5" fill="#FFFFFF" stroke="#93ABC6" stroke-width="1.6"/>
+<polyline points="118,189 184,189" fill="none" stroke="#93ABC6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="118,201 184,201" fill="none" stroke="#93ABC6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="118,213 184,213" fill="none" stroke="#93ABC6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="144" y="263" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#172B4D" font-weight="700" text-anchor="middle">Document corpus</text>
+<text x="144" y="289" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#52647B" font-weight="400" text-anchor="middle">100k+ documents</text>
+<polyline points="144,305 144,332" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="140.16459569116637,324.97933950487703 144,332 147.83540430883363,324.97933950487703" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="68" y="344" width="152" height="44" rx="8" fill="#FFFFFF" stroke="#1761A0" stroke-width="1.6"/>
+<text x="144" y="373" font-family="DejaVu Sans,Arial,sans-serif" font-size="19" fill="#172B4D" font-weight="700" text-anchor="middle">Search</text>
+<polyline points="144,400 144,428" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="140.16459569116637,420.97933950487703 144,428 147.83540430883363,420.97933950487703" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="43" y="440" width="202" height="83" rx="7" fill="#FFFFFF" stroke="#C8D2DF" stroke-width="1.6"/>
+<text x="144" y="471" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172B4D" font-weight="700" text-anchor="middle">Top-k documents</text>
+<text x="144" y="496.0" font-family="DejaVu Sans,Arial,sans-serif" font-size="14.5" fill="#52647B" font-weight="400" text-anchor="middle">Preview: first 512 tokens</text>
+<rect x="300" y="83" width="600" height="471" rx="12" fill="#F7F4FB" stroke="#6646AB" stroke-width="1.6"/>
+<text x="322" y="125" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#172B4D" font-weight="700" text-anchor="start">Selective Reader</text>
+<rect x="323" y="150" width="554" height="44" rx="8" fill="#FFFFFF" stroke="#CCBFDF" stroke-width="1.6"/>
+<text x="600" y="179" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172B4D" font-weight="700" text-anchor="middle">Task  |  Solver state  |  Query</text>
+<polyline points="600,194 600,220" fill="none" stroke="#172B4D" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="596.1645956911664,212.97933950487703 600,220 603.8354043088336,212.97933950487703" fill="none" stroke="#172B4D" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="449" y="226" width="302" height="65" rx="9" fill="#EBF4FC" stroke="#1761A0" stroke-width="1.6"/>
+<text x="600" y="253" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#172B4D" font-weight="700" text-anchor="middle">Scan prefix</text>
+<text x="600" y="278" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#52647B" font-weight="400" text-anchor="middle">First 512 tokens</text>
+<polyline points="600,291 600,310" fill="none" stroke="#172B4D" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="596.1645956911664,302.97933950487703 600,310 603.8354043088336,302.97933950487703" fill="none" stroke="#172B4D" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="600,310 685,356 600,402 515,356" fill="#FFF2D9" stroke="#BB8D2B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="600" y="350" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#172B4D" font-weight="700" text-anchor="middle">Reader</text>
+<text x="600" y="373" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#172B4D" font-weight="700" text-anchor="middle">decision</text>
+<polyline points="515,356 391,356 391,453" fill="none" stroke="#AA4C3B" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="387.16459569116637,445.97933950487703 391,453 394.83540430883363,445.97933950487703" fill="none" stroke="#AA4C3B" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="600,402 600,453" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="596.1645956911664,445.97933950487703 600,453 603.8354043088336,445.97933950487703" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="685,356 800,356 800,453" fill="none" stroke="#25704E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="796.1645956911664,445.97933950487703 800,453 803.8354043088336,445.97933950487703" fill="none" stroke="#25704E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="325" y="414" width="134" height="25" rx="3" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="392.0" y="431" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" fill="#AA4C3B" font-weight="700" text-anchor="middle">Irrelevant</text>
+<rect x="518" y="414" width="164" height="25" rx="3" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="600.0" y="431" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" fill="#1761A0" font-weight="700" text-anchor="middle">Need more evidence</text>
+<rect x="748" y="414" width="110" height="25" rx="3" fill="#FFFFFF" stroke="none" stroke-width="1.6"/>
+<text x="803.0" y="431" font-family="DejaVu Sans,Arial,sans-serif" font-size="13" fill="#25704E" font-weight="700" text-anchor="middle">Sufficient</text>
+<rect x="320" y="458" width="142" height="75" rx="8" fill="#FFFFFF" stroke="#AA4C3B" stroke-width="1.6"/>
+<text x="391" y="488" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#172B4D" font-weight="700" text-anchor="middle">Drop</text>
+<text x="391" y="514" font-family="DejaVu Sans,Arial,sans-serif" font-size="15" fill="#52647B" font-weight="400" text-anchor="middle">No evidence</text>
+<rect x="487" y="458" width="226" height="75" rx="8" fill="#FFFFFF" stroke="#1761A0" stroke-width="1.6"/>
+<text x="600" y="484" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#172B4D" font-weight="700" text-anchor="middle">Explore</text>
+<text x="600" y="506" font-family="DejaVu Sans,Arial,sans-serif" font-size="13.5" fill="#1761A0" font-weight="400" text-anchor="middle">OPEN (lines)  /  FIND (phrase)</text>
+<text x="600" y="525" font-family="DejaVu Sans,Arial,sans-serif" font-size="11.5" fill="#52647B" font-weight="400" text-anchor="middle">At most 3 extra actions / document</text>
+<rect x="738" y="458" width="141" height="75" rx="8" fill="#FFFFFF" stroke="#25704E" stroke-width="1.6"/>
+<text x="808.5" y="488" font-family="DejaVu Sans,Arial,sans-serif" font-size="21" fill="#172B4D" font-weight="700" text-anchor="middle">Return</text>
+<text x="808.5" y="514" font-family="DejaVu Sans,Arial,sans-serif" font-size="14.5" fill="#52647B" font-weight="400" text-anchor="middle">Selected lines</text>
+<polyline points="713,480 725,480 725,291" fill="none" stroke="#6646AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 5"/>
+<polyline points="728.8354043088336,298.02066049512297 725,291 721.1645956911664,298.02066049512297" fill="none" stroke="#6646AB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="716,356 734,356" fill="none" stroke="#F7F4FB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="716,356 734,356" fill="none" stroke="#25704E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="741" y="321" font-family="DejaVu Sans,Arial,sans-serif" font-size="12" fill="#6646AB" font-weight="400" text-anchor="start">Reassess</text>
+<rect x="936" y="83" width="240" height="471" rx="12" fill="#F0F8F3" stroke="#25704E" stroke-width="1.6"/>
+<text x="1056" y="126" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" fill="#172B4D" font-weight="700" text-anchor="middle">Solver</text>
+<text x="1056" y="197" font-family="DejaVu Sans,Arial,sans-serif" font-size="18" fill="#172B4D" font-weight="700" text-anchor="middle">Selected evidence</text>
+<rect x="954" y="220" width="204" height="245" rx="9" fill="#FFFFFF" stroke="#C8D2DF" stroke-width="1.6"/>
+<text x="969" y="253" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#52647B" font-weight="400" text-anchor="start">Excerpt A + citation</text>
+<rect x="970" y="267" width="163" height="8" rx="2" fill="#BFE0CD" stroke="none" stroke-width="1.6"/>
+<rect x="970" y="283" width="163" height="8" rx="2" fill="#BFE0CD" stroke="none" stroke-width="1.6"/>
+<rect x="970" y="299" width="116" height="8" rx="2" fill="#BFE0CD" stroke="none" stroke-width="1.6"/>
+<text x="969" y="350" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#52647B" font-weight="400" text-anchor="start">Excerpt B + citation</text>
+<rect x="970" y="364" width="163" height="8" rx="2" fill="#BFE0CD" stroke="none" stroke-width="1.6"/>
+<rect x="970" y="380" width="163" height="8" rx="2" fill="#BFE0CD" stroke="none" stroke-width="1.6"/>
+<rect x="970" y="396" width="116" height="8" rx="2" fill="#BFE0CD" stroke="none" stroke-width="1.6"/>
+<text x="971" y="448" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" fill="#25704E" font-weight="700" text-anchor="start">…</text>
+<text x="1056" y="502" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#52647B" font-weight="400" text-anchor="middle">Verbatim source passages</text>
+<text x="1056" y="524" font-family="DejaVu Sans,Arial,sans-serif" font-size="14" fill="#52647B" font-weight="400" text-anchor="middle">enter the solver context.</text>
+<polyline points="264,335 300,335" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="292.97933950487703,338.83540430883363 300,335 292.97933950487703,331.16459569116637" fill="none" stroke="#1761A0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="900,335 936,335" fill="none" stroke="#25704E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="928.979339504877,338.83540430883363 936,335 928.979339504877,331.16459569116637" fill="none" stroke="#25704E" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="600" y="584" font-family="DejaVu Sans,Arial,sans-serif" font-size="17" fill="#172B4D" font-weight="700" text-anchor="middle">Inspect selectively; keep intermediate reading outside the solver’s context.</text>
+</svg>
